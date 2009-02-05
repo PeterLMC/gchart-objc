@@ -1,0 +1,98 @@
+\hypertarget{interface_t_p_color}{
+\section{TPColor Class Reference}
+\label{interface_t_p_color}\index{TPColor@{TPColor}}
+}
+{\tt \#import $<$TPColor.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+(BOOL) - \hyperlink{interface_t_p_color_ddcd99b87a88f0b5f2c678f9cb4d0737}{isEqualToColor:}
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+(id) + \hyperlink{interface_t_p_color_7985340e6fb29790992e2504611b8730}{colorWithRed:green:blue:}
+\end{CompactItemize}
+\subsection*{Properties}
+\begin{CompactItemize}
+\item 
+unsigned char \hyperlink{interface_t_p_color_5b284d282ceddcbf24e37bb2bac9b217}{red}
+\item 
+unsigned char \hyperlink{interface_t_p_color_865eef9925aefb84be7b634757f1becb}{green}
+\item 
+unsigned char \hyperlink{interface_t_p_color_ab1912bec2407a73f0c27f3ba9a203d3}{blue}
+\item 
+unsigned char \hyperlink{interface_t_p_color_9fa955c7633315825a8c5c2edd77aebd}{alpha}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+An \hyperlink{interface_t_p_color}{TPColor} object represents a RGB color 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_t_p_color_7985340e6fb29790992e2504611b8730}{
+\index{TPColor@{TPColor}!colorWithRed:green:blue:@{colorWithRed:green:blue:}}
+\index{colorWithRed:green:blue:@{colorWithRed:green:blue:}!TPColor@{TPColor}}
+\subsubsection[{colorWithRed:green:blue:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) colorWithRed: (unsigned char) {\em r}\/ green: (unsigned char) {\em g}\/ blue: (unsigned char) {\em b}}}
+\label{interface_t_p_color_7985340e6fb29790992e2504611b8730}
+
+
+Returns a new color \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em r}]red part \item[{\em g}]green part \item[{\em b}]blue part \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]new color with the given values \end{Desc}
+\hypertarget{interface_t_p_color_ddcd99b87a88f0b5f2c678f9cb4d0737}{
+\index{TPColor@{TPColor}!isEqualToColor:@{isEqualToColor:}}
+\index{isEqualToColor:@{isEqualToColor:}!TPColor@{TPColor}}
+\subsubsection[{isEqualToColor:}]{\setlength{\rightskip}{0pt plus 5cm}- (BOOL) isEqualToColor: ({\bf TPColor} $\ast$) {\em color}}}
+\label{interface_t_p_color_ddcd99b87a88f0b5f2c678f9cb4d0737}
+
+
+compares the color to an other color \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em color}]the color to compare with \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]YES if color is equal, else NO \end{Desc}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_t_p_color_9fa955c7633315825a8c5c2edd77aebd}{
+\index{TPColor@{TPColor}!alpha@{alpha}}
+\index{alpha@{alpha}!TPColor@{TPColor}}
+\subsubsection[{alpha}]{\setlength{\rightskip}{0pt plus 5cm}- (unsigned char) alpha\hspace{0.3cm}{\tt  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_t_p_color_9fa955c7633315825a8c5c2edd77aebd}
+
+
+alpha value of the color 0-0xFF \hypertarget{interface_t_p_color_ab1912bec2407a73f0c27f3ba9a203d3}{
+\index{TPColor@{TPColor}!blue@{blue}}
+\index{blue@{blue}!TPColor@{TPColor}}
+\subsubsection[{blue}]{\setlength{\rightskip}{0pt plus 5cm}- (unsigned char) blue\hspace{0.3cm}{\tt  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_t_p_color_ab1912bec2407a73f0c27f3ba9a203d3}
+
+
+blue part of the color 0-0xFF \hypertarget{interface_t_p_color_865eef9925aefb84be7b634757f1becb}{
+\index{TPColor@{TPColor}!green@{green}}
+\index{green@{green}!TPColor@{TPColor}}
+\subsubsection[{green}]{\setlength{\rightskip}{0pt plus 5cm}- (unsigned char) green\hspace{0.3cm}{\tt  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_t_p_color_865eef9925aefb84be7b634757f1becb}
+
+
+green part of the color 0-0xFF \hypertarget{interface_t_p_color_5b284d282ceddcbf24e37bb2bac9b217}{
+\index{TPColor@{TPColor}!red@{red}}
+\index{red@{red}!TPColor@{TPColor}}
+\subsubsection[{red}]{\setlength{\rightskip}{0pt plus 5cm}- (unsigned char) red\hspace{0.3cm}{\tt  \mbox{[}read, write, assign\mbox{]}}}}
+\label{interface_t_p_color_5b284d282ceddcbf24e37bb2bac9b217}
+
+
+red part of the color 0-0xFF 
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+TPColor.h\item 
+TPColor.m\end{CompactItemize}
