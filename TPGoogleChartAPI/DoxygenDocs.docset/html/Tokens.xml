@@ -222,6 +222,26 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>TPChartDataScaling-p</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>cl</Type>
+      <Scope></Scope>
+    </TokenIdentifier>
+    <Path>protocol_t_p_chart_data_scaling-p.html</Path>
+    <DeclaredIn>TPParameterProtocols.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setScalingData:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>func</Type>
+      <Scope>TPChartDataScaling-p</Scope>
+    </TokenIdentifier>
+    <Path>protocol_t_p_chart_data_scaling-p.html</Path>
+    <Anchor>940844c4e44e6f253f1b9b389646793d</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>TPChartLine</Name>
       <APILanguage>occ</APILanguage>
       <Type>cl</Type>
@@ -269,6 +289,16 @@
     </TokenIdentifier>
     <Path>interface_t_p_chart_o_meter.html</Path>
     <Anchor>f28c79861d8123f6294791942243c0aa</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>label</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>property</Type>
+      <Scope>TPChartOMeter</Scope>
+    </TokenIdentifier>
+    <Path>interface_t_p_chart_o_meter.html</Path>
+    <Anchor>13fa16f1efed823bb7dc221355688312</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -549,6 +579,26 @@
     </TokenIdentifier>
     <Path>interface_t_p_parameter_chart_color.html</Path>
     <Anchor>21f439b808b2f6a9495c337e740db7b8</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>TPParameterDataScaling</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>cl</Type>
+      <Scope></Scope>
+    </TokenIdentifier>
+    <Path>interface_t_p_parameter_data_scaling.html</Path>
+    <DeclaredIn>TPParameterDataScaling.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setValueForDataSet:minValue:maxValue:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>TPParameterDataScaling</Scope>
+    </TokenIdentifier>
+    <Path>interface_t_p_parameter_data_scaling.html</Path>
+    <Anchor>3dfe9bc7aed1db751668d2b35ed5f96a</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>

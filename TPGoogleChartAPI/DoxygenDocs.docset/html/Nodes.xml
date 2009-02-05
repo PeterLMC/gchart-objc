@@ -34,6 +34,10 @@
           <Path>protocol_t_p_chart_color-p.html</Path>
          </Node>
          <Node>
+          <Name>&lt; TPChartDataScaling &gt;</Name>
+          <Path>protocol_t_p_chart_data_scaling-p.html</Path>
+         </Node>
+         <Node>
           <Name>TPChartLine</Name>
           <Path>interface_t_p_chart_line.html</Path>
          </Node>
@@ -64,6 +68,10 @@
          <Node>
           <Name>TPParameterChartColor</Name>
           <Path>interface_t_p_parameter_chart_color.html</Path>
+         </Node>
+         <Node>
+          <Name>TPParameterDataScaling</Name>
+          <Path>interface_t_p_parameter_data_scaling.html</Path>
          </Node>
          <Node>
           <Name>TPParameterSolidFill</Name>
@@ -114,6 +122,10 @@
             <Path>interface_t_p_parameter_chart_color.html</Path>
            </Node>
            <Node>
+            <Name>TPParameterDataScaling</Name>
+            <Path>interface_t_p_parameter_data_scaling.html</Path>
+           </Node>
+           <Node>
             <Name>TPParameterSolidFill</Name>
             <Path>interface_t_p_parameter_solid_fill.html</Path>
            </Node>
@@ -154,6 +166,16 @@
               <Path>interface_t_p_chart_venn.html</Path>
              </Node>
             </Subnodes>
+           </Node>
+          </Subnodes>
+         </Node>
+         <Node>
+          <Name>&lt; TPChartDataScaling &gt;</Name>
+          <Path>protocol_t_p_chart_data_scaling-p.html</Path>
+          <Subnodes>
+           <Node>
+            <Name>TPChart</Name>
+            <Path>interface_t_p_chart.html</Path>
            </Node>
           </Subnodes>
          </Node>

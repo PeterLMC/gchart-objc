@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>TPChart.h Source File</title>
+<title>TPParameterDataScaling.h Source File</title>
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="tabs.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -18,8 +18,8 @@
       <li><a href="files.html"><span>File&nbsp;List</span></a></li>
     </ul>
   </div>
-<h1>TPChart.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
-<a name="l00002"></a>00002 <span class="comment">//  TPChart.h</span>
+<h1>TPParameterDataScaling.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
+<a name="l00002"></a>00002 <span class="comment">//  TPParameterDataScaling.h</span>
 <a name="l00003"></a>00003 <span class="comment">//  TPGoogleChartAPI</span>
 <a name="l00004"></a>00004 <span class="comment">//</span>
 <a name="l00005"></a>00005 <span class="comment">//  Copyright (c) 2009 Thomas Post. All rights reserved.</span>
@@ -47,40 +47,17 @@
 <a name="l00027"></a>00027 <span class="comment">//</span>
 <a name="l00028"></a>00028 
 <a name="l00029"></a>00029 <span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span>
-<a name="l00030"></a>00030 <span class="preprocessor">#import "TPParameterProtocols.h"</span>
+<a name="l00030"></a>00030 <span class="preprocessor">#import "TPChart.h"</span>
 <a name="l00031"></a>00031 
-<a name="l00032"></a>00032 <span class="preprocessor">#define kGoogleChartAPIURL </span><span class="stringliteral">@"http://chart.apis.google.com/chart?"</span>
-<a name="l00033"></a>00033 
-<a name="l00038"></a><a class="code" href="interface_t_p_chart.html">00038</a> <span class="keyword">@interface </span><a class="code" href="interface_t_p_chart.html">TPChart</a> : NSObject&lt;<a class="code" href="protocol_t_p_chart_solid_fill-p.html">TPChartSolidFill</a>,<a class="code" href="protocol_t_p_chart_color-p.html">TPChartColor</a>,<a class="code" href="protocol_t_p_chart_data_scaling-p.html">TPChartDataScaling</a>&gt; {
-<a name="l00039"></a>00039 <span class="keyword">@private</span>
-<a name="l00040"></a><a class="code" href="interface_t_p_chart.html#050f86ea651d6dee6d96cec69ff3a617">00040</a>     NSSize <a class="code" href="interface_t_p_chart.html#050f86ea651d6dee6d96cec69ff3a617">size</a>;
-<a name="l00041"></a>00041     <a class="code" href="interface_t_p_parameter_solid_fill.html">TPParameterSolidFill</a> *fillColors;
-<a name="l00042"></a>00042     <a class="code" href="interface_t_p_parameter_chart_color.html">TPParameterChartColor</a> *colors;
-<a name="l00043"></a>00043     <a class="code" href="interface_t_p_parameter_data_scaling.html">TPParameterDataScaling</a> *scaling;
-<a name="l00044"></a>00044 }
-<a name="l00048"></a>00048 @<span class="keyword">property</span> NSSize size;
-<a name="l00049"></a>00049 
-<a name="l00054"></a>00054 - (NSMutableString *)URL;
-<a name="l00055"></a>00055 
-<a name="l00060"></a>00060 - (NSURLRequest *)imageRequest;
-<a name="l00061"></a>00061 
-<a name="l00062"></a>00062 <span class="keyword">@end</span>
-<a name="l00063"></a>00063 
-<a name="l00064"></a>00064 
-<a name="l00065"></a>00065 
-<a name="l00066"></a>00066 
-<a name="l00067"></a>00067 
-<a name="l00068"></a>00068 <span class="comment">/*</span>
-<a name="l00069"></a>00069 <span class="comment"> * Protocols for spezial Parameters</span>
-<a name="l00070"></a>00070 <span class="comment"> *</span>
-<a name="l00071"></a>00071 <span class="comment"> */</span>
-<a name="l00072"></a>00072 
-<a name="l00073"></a>00073 
-<a name="l00078"></a><a class="code" href="protocol_t_p_adds_part_to_the_u_r_l-p.html">00078</a>  <span class="keyword">@protocol </span>TPAddsPartToTheURL
-<a name="l00082"></a>00082 -(NSMutableString *)partialURL;
-<a name="l00083"></a>00083 
-<a name="l00084"></a>00084 <span class="keyword">@end</span>
-<a name="l00085"></a>00085 
+<a name="l00035"></a><a class="code" href="interface_t_p_parameter_data_scaling.html">00035</a> <span class="keyword">@interface </span><a class="code" href="interface_t_p_parameter_data_scaling.html">TPParameterDataScaling</a> : NSObject&lt;<a class="code" href="protocol_t_p_adds_part_to_the_u_r_l-p.html">TPAddsPartToTheURL</a>&gt; {
+<a name="l00036"></a>00036 <span class="keyword">@private</span>
+<a name="l00037"></a>00037     NSMutableArray *scalingData;
+<a name="l00038"></a>00038 }
+<a name="l00039"></a>00039 
+<a name="l00046"></a>00046 - (void)setValueForDataSet:(NSInteger)index 
+<a name="l00047"></a>00047                   minValue:(NSNumber *)min 
+<a name="l00048"></a>00048                   maxValue:(NSNumber *)max;
+<a name="l00049"></a>00049 <span class="keyword">@end</span>
 </pre></div></div>
 <hr size="1"><address style="text-align: right;"><small>Generated on Thu Feb 5 14:50:47 2009 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
