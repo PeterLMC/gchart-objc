@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		F20CAAFC0F37322000B59304 /* TPChart.h in Headers */ = {isa = PBXBuildFile; fileRef = F20CAAFA0F37322000B59304 /* TPChart.h */; };
+		F20CAAFD0F37322000B59304 /* TPChart.m in Sources */ = {isa = PBXBuildFile; fileRef = F20CAAFB0F37322000B59304 /* TPChart.m */; };
+		F20CAB9A0F373BF300B59304 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20CAB7A0F373B8500B59304 /* SenTestingKit.framework */; };
+		F20CAB9F0F373C3600B59304 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20CAB9E0F373C3600B59304 /* Cocoa.framework */; };
+		F20CABA00F373C3600B59304 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20CAB9E0F373C3600B59304 /* Cocoa.framework */; };
+		F20CABA70F373C4E00B59304 /* TPChart.m in Sources */ = {isa = PBXBuildFile; fileRef = F20CAAFB0F37322000B59304 /* TPChart.m */; };
+		F20CABA80F373C4E00B59304 /* TPChartTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F20CAB760F373A2D00B59304 /* TPChartTest.m */; };
+		F20CACC50F3748C700B59304 /* TPChartLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F20CACC40F3748C700B59304 /* TPChartLine.m */; };
+		F20CACC60F3748C700B59304 /* TPChartLine.h in Headers */ = {isa = PBXBuildFile; fileRef = F20CACC30F3748C700B59304 /* TPChartLine.h */; };
+		F20CACC70F3748C700B59304 /* TPChartLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F20CACC40F3748C700B59304 /* TPChartLine.m */; };
+		F20CACDB0F374B3E00B59304 /* TPChartLineTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F20CACDA0F374B3E00B59304 /* TPChartLineTest.m */; };
+		F211C81D0F3AE4F800DBBC3F /* TPParameterSolidFill.m in Sources */ = {isa = PBXBuildFile; fileRef = F211C81C0F3AE4F800DBBC3F /* TPParameterSolidFill.m */; };
+		F211C81E0F3AE4F800DBBC3F /* TPParameterSolidFill.h in Headers */ = {isa = PBXBuildFile; fileRef = F211C81B0F3AE4F800DBBC3F /* TPParameterSolidFill.h */; };
+		F211C81F0F3AE4F800DBBC3F /* TPParameterSolidFill.m in Sources */ = {isa = PBXBuildFile; fileRef = F211C81C0F3AE4F800DBBC3F /* TPParameterSolidFill.m */; };
+		F211C8560F3AEE4500DBBC3F /* TPParameterProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = F211C8550F3AEE4500DBBC3F /* TPParameterProtocols.h */; };
+		F211C8690F3AF0F200DBBC3F /* TPParameterSolidFillTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F211C8680F3AF0F200DBBC3F /* TPParameterSolidFillTest.m */; };
+		F211C9690F3B061800DBBC3F /* TPChartOMeter.h in Headers */ = {isa = PBXBuildFile; fileRef = F211C9670F3B061800DBBC3F /* TPChartOMeter.h */; };
+		F211C96A0F3B061800DBBC3F /* TPChartOMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = F211C9680F3B061800DBBC3F /* TPChartOMeter.m */; };
+		F211C96B0F3B061800DBBC3F /* TPChartOMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = F211C9680F3B061800DBBC3F /* TPChartOMeter.m */; };
+		F211C9910F3B079000DBBC3F /* TPChartOMeterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F211C9900F3B079000DBBC3F /* TPChartOMeterTest.m */; };
+		F237C5440F38D561008D5427 /* TPParameterAxisStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F237C5430F38D561008D5427 /* TPParameterAxisStyle.m */; };
+		F237C5450F38D561008D5427 /* TPParameterAxisStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = F237C5420F38D561008D5427 /* TPParameterAxisStyle.h */; };
+		F237C5460F38D561008D5427 /* TPParameterAxisStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F237C5430F38D561008D5427 /* TPParameterAxisStyle.m */; };
+		F289510B0F3A19C600166F2B /* TPChartVenn.m in Sources */ = {isa = PBXBuildFile; fileRef = F289510A0F3A19C600166F2B /* TPChartVenn.m */; };
+		F289510C0F3A19C600166F2B /* TPChartVenn.h in Headers */ = {isa = PBXBuildFile; fileRef = F28951090F3A19C600166F2B /* TPChartVenn.h */; };
+		F289510D0F3A19C600166F2B /* TPChartVenn.m in Sources */ = {isa = PBXBuildFile; fileRef = F289510A0F3A19C600166F2B /* TPChartVenn.m */; };
+		F2CF26730F38EBFF004F4D3C /* TPParameterChartColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CF26720F38EBFF004F4D3C /* TPParameterChartColor.m */; };
+		F2CF26740F38EBFF004F4D3C /* TPParameterChartColor.h in Headers */ = {isa = PBXBuildFile; fileRef = F2CF26710F38EBFF004F4D3C /* TPParameterChartColor.h */; };
+		F2CF26750F38EBFF004F4D3C /* TPParameterChartColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CF26720F38EBFF004F4D3C /* TPParameterChartColor.m */; };
+		F2CF26790F38ECB6004F4D3C /* TPColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CF26780F38ECB6004F4D3C /* TPColor.m */; };
+		F2CF267A0F38ECB6004F4D3C /* TPColor.h in Headers */ = {isa = PBXBuildFile; fileRef = F2CF26770F38ECB6004F4D3C /* TPColor.h */; };
+		F2CF267B0F38ECB6004F4D3C /* TPColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CF26780F38ECB6004F4D3C /* TPColor.m */; };
+		F2CF268D0F38EEB3004F4D3C /* TPColorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CF268C0F38EEB3004F4D3C /* TPColorTest.m */; };
+		F2CF26CA0F38F6EC004F4D3C /* TPChartPie.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CF26C90F38F6EC004F4D3C /* TPChartPie.m */; };
+		F2CF26CB0F38F6EC004F4D3C /* TPChartPie.h in Headers */ = {isa = PBXBuildFile; fileRef = F2CF26C80F38F6EC004F4D3C /* TPChartPie.h */; };
+		F2CF26CC0F38F6EC004F4D3C /* TPChartPie.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CF26C90F38F6EC004F4D3C /* TPChartPie.m */; };
+		F2CF26F80F38FC8E004F4D3C /* TPChartPieTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CF26F70F38FC8E004F4D3C /* TPChartPieTest.m */; };
+		F2E97D410F3A06CF002B6BF8 /* TPChartBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E97D400F3A06CF002B6BF8 /* TPChartBar.m */; };
+		F2E97D420F3A06CF002B6BF8 /* TPChartBar.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E97D3F0F3A06CF002B6BF8 /* TPChartBar.h */; };
+		F2E97D430F3A06CF002B6BF8 /* TPChartBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E97D400F3A06CF002B6BF8 /* TPChartBar.m */; };
+		F2E97D5F0F3A0C74002B6BF8 /* TPChartBarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E97D5E0F3A0C74002B6BF8 /* TPChartBarTest.m */; };
+		F2E97E1D0F3A166D002B6BF8 /* TPChartBasic.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E97E1C0F3A166D002B6BF8 /* TPChartBasic.m */; };
+		F2E97E1E0F3A166D002B6BF8 /* TPChartBasic.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E97E1B0F3A166D002B6BF8 /* TPChartBasic.h */; };
+		F2E97E1F0F3A166D002B6BF8 /* TPChartBasic.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E97E1C0F3A166D002B6BF8 /* TPChartBasic.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32DBCF5E0370ADEE00C91783 /* TPGoogleChartAPI_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPGoogleChartAPI_Prefix.pch; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* TPGoogleChartAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPGoogleChartAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		F20CAAFA0F37322000B59304 /* TPChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChart.h; sourceTree = "<group>"; };
+		F20CAAFB0F37322000B59304 /* TPChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChart.m; sourceTree = "<group>"; };
+		F20CAB750F373A2D00B59304 /* TPChartTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChartTest.h; sourceTree = "<group>"; };
+		F20CAB760F373A2D00B59304 /* TPChartTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChartTest.m; sourceTree = "<group>"; };
+		F20CAB7A0F373B8500B59304 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F20CAB950F373BCD00B59304 /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F20CAB960F373BCD00B59304 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		F20CAB9E0F373C3600B59304 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		F20CACC30F3748C700B59304 /* TPChartLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChartLine.h; sourceTree = "<group>"; };
+		F20CACC40F3748C700B59304 /* TPChartLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChartLine.m; sourceTree = "<group>"; };
+		F20CACD90F374B3E00B59304 /* TPChartLineTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChartLineTest.h; sourceTree = "<group>"; };
+		F20CACDA0F374B3E00B59304 /* TPChartLineTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChartLineTest.m; sourceTree = "<group>"; };
+		F211C81B0F3AE4F800DBBC3F /* TPParameterSolidFill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPParameterSolidFill.h; sourceTree = "<group>"; };
+		F211C81C0F3AE4F800DBBC3F /* TPParameterSolidFill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPParameterSolidFill.m; sourceTree = "<group>"; };
+		F211C8550F3AEE4500DBBC3F /* TPParameterProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPParameterProtocols.h; sourceTree = "<group>"; };
+		F211C8670F3AF0F200DBBC3F /* TPParameterSolidFillTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPParameterSolidFillTest.h; sourceTree = "<group>"; };
+		F211C8680F3AF0F200DBBC3F /* TPParameterSolidFillTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPParameterSolidFillTest.m; sourceTree = "<group>"; };
+		F211C9670F3B061800DBBC3F /* TPChartOMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChartOMeter.h; sourceTree = "<group>"; };
+		F211C9680F3B061800DBBC3F /* TPChartOMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChartOMeter.m; sourceTree = "<group>"; };
+		F211C98F0F3B079000DBBC3F /* TPChartOMeterTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChartOMeterTest.h; sourceTree = "<group>"; };
+		F211C9900F3B079000DBBC3F /* TPChartOMeterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChartOMeterTest.m; sourceTree = "<group>"; };
+		F237C5420F38D561008D5427 /* TPParameterAxisStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPParameterAxisStyle.h; sourceTree = "<group>"; };
+		F237C5430F38D561008D5427 /* TPParameterAxisStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPParameterAxisStyle.m; sourceTree = "<group>"; };
+		F28951090F3A19C600166F2B /* TPChartVenn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChartVenn.h; sourceTree = "<group>"; };
+		F289510A0F3A19C600166F2B /* TPChartVenn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChartVenn.m; sourceTree = "<group>"; };
+		F2CF26710F38EBFF004F4D3C /* TPParameterChartColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPParameterChartColor.h; sourceTree = "<group>"; };
+		F2CF26720F38EBFF004F4D3C /* TPParameterChartColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPParameterChartColor.m; sourceTree = "<group>"; };
+		F2CF26770F38ECB6004F4D3C /* TPColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPColor.h; sourceTree = "<group>"; };
+		F2CF26780F38ECB6004F4D3C /* TPColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPColor.m; sourceTree = "<group>"; };
+		F2CF268B0F38EEB3004F4D3C /* TPColorTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPColorTest.h; sourceTree = "<group>"; };
+		F2CF268C0F38EEB3004F4D3C /* TPColorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPColorTest.m; sourceTree = "<group>"; };
+		F2CF26C80F38F6EC004F4D3C /* TPChartPie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChartPie.h; sourceTree = "<group>"; };
+		F2CF26C90F38F6EC004F4D3C /* TPChartPie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChartPie.m; sourceTree = "<group>"; };
+		F2CF26F60F38FC8E004F4D3C /* TPChartPieTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChartPieTest.h; sourceTree = "<group>"; };
+		F2CF26F70F38FC8E004F4D3C /* TPChartPieTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChartPieTest.m; sourceTree = "<group>"; };
+		F2E97D3F0F3A06CF002B6BF8 /* TPChartBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChartBar.h; sourceTree = "<group>"; };
+		F2E97D400F3A06CF002B6BF8 /* TPChartBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChartBar.m; sourceTree = "<group>"; };
+		F2E97D5D0F3A0C74002B6BF8 /* TPChartBarTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChartBarTest.h; sourceTree = "<group>"; };
+		F2E97D5E0F3A0C74002B6BF8 /* TPChartBarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChartBarTest.m; sourceTree = "<group>"; };
+		F2E97E1B0F3A166D002B6BF8 /* TPChartBasic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChartBasic.h; sourceTree = "<group>"; };
+		F2E97E1C0F3A166D002B6BF8 /* TPChartBasic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChartBasic.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20CAB9F0F373C3600B59304 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F20CAB920F373BCD00B59304 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20CAB9A0F373BF300B59304 /* SenTestingKit.framework in Frameworks */,
+				F20CABA00F373C3600B59304 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* TPGoogleChartAPI.framework */,
+				F20CAB950F373BCD00B59304 /* Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* TPGoogleChartAPI */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				F20CAB960F373BCD00B59304 /* Tests-Info.plist */,
+			);
+			name = TPGoogleChartAPI;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F20CAB6A0F3739A300B59304 /* api */,
+				F20CAB680F37399600B59304 /* tests */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F20CAB9E0F373C3600B59304 /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F20CAB7A0F373B8500B59304 /* SenTestingKit.framework */,
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* TPGoogleChartAPI_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		F20CAB680F37399600B59304 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				F20CAB750F373A2D00B59304 /* TPChartTest.h */,
+				F20CAB760F373A2D00B59304 /* TPChartTest.m */,
+				F20CACD90F374B3E00B59304 /* TPChartLineTest.h */,
+				F20CACDA0F374B3E00B59304 /* TPChartLineTest.m */,
+				F2CF26F60F38FC8E004F4D3C /* TPChartPieTest.h */,
+				F2CF26F70F38FC8E004F4D3C /* TPChartPieTest.m */,
+				F2CF268B0F38EEB3004F4D3C /* TPColorTest.h */,
+				F2CF268C0F38EEB3004F4D3C /* TPColorTest.m */,
+				F2E97D5D0F3A0C74002B6BF8 /* TPChartBarTest.h */,
+				F2E97D5E0F3A0C74002B6BF8 /* TPChartBarTest.m */,
+				F211C8670F3AF0F200DBBC3F /* TPParameterSolidFillTest.h */,
+				F211C8680F3AF0F200DBBC3F /* TPParameterSolidFillTest.m */,
+				F211C98F0F3B079000DBBC3F /* TPChartOMeterTest.h */,
+				F211C9900F3B079000DBBC3F /* TPChartOMeterTest.m */,
+			);
+			name = tests;
+			sourceTree = "<group>";
+		};
+		F20CAB6A0F3739A300B59304 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				F2E97E020F3A1529002B6BF8 /* Utils */,
+				F237C53B0F38D51B008D5427 /* Parameters */,
+				F237C53A0F38D502008D5427 /* Charts */,
+			);
+			name = api;
+			sourceTree = "<group>";
+		};
+		F237C53A0F38D502008D5427 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				F20CAAFA0F37322000B59304 /* TPChart.h */,
+				F20CAAFB0F37322000B59304 /* TPChart.m */,
+				F2E97E1B0F3A166D002B6BF8 /* TPChartBasic.h */,
+				F2E97E1C0F3A166D002B6BF8 /* TPChartBasic.m */,
+				F20CACC30F3748C700B59304 /* TPChartLine.h */,
+				F20CACC40F3748C700B59304 /* TPChartLine.m */,
+				F2CF26C80F38F6EC004F4D3C /* TPChartPie.h */,
+				F2CF26C90F38F6EC004F4D3C /* TPChartPie.m */,
+				F2E97D3F0F3A06CF002B6BF8 /* TPChartBar.h */,
+				F2E97D400F3A06CF002B6BF8 /* TPChartBar.m */,
+				F28951090F3A19C600166F2B /* TPChartVenn.h */,
+				F289510A0F3A19C600166F2B /* TPChartVenn.m */,
+				F211C9670F3B061800DBBC3F /* TPChartOMeter.h */,
+				F211C9680F3B061800DBBC3F /* TPChartOMeter.m */,
+			);
+			name = Charts;
+			sourceTree = "<group>";
+		};
+		F237C53B0F38D51B008D5427 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				F237C5420F38D561008D5427 /* TPParameterAxisStyle.h */,
+				F237C5430F38D561008D5427 /* TPParameterAxisStyle.m */,
+				F2CF26710F38EBFF004F4D3C /* TPParameterChartColor.h */,
+				F2CF26720F38EBFF004F4D3C /* TPParameterChartColor.m */,
+				F211C81B0F3AE4F800DBBC3F /* TPParameterSolidFill.h */,
+				F211C81C0F3AE4F800DBBC3F /* TPParameterSolidFill.m */,
+				F211C8550F3AEE4500DBBC3F /* TPParameterProtocols.h */,
+			);
+			name = Parameters;
+			sourceTree = "<group>";
+		};
+		F2E97E020F3A1529002B6BF8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F2CF26770F38ECB6004F4D3C /* TPColor.h */,
+				F2CF26780F38ECB6004F4D3C /* TPColor.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20CAAFC0F37322000B59304 /* TPChart.h in Headers */,
+				F20CACC60F3748C700B59304 /* TPChartLine.h in Headers */,
+				F237C5450F38D561008D5427 /* TPParameterAxisStyle.h in Headers */,
+				F2CF26740F38EBFF004F4D3C /* TPParameterChartColor.h in Headers */,
+				F2CF267A0F38ECB6004F4D3C /* TPColor.h in Headers */,
+				F2CF26CB0F38F6EC004F4D3C /* TPChartPie.h in Headers */,
+				F2E97D420F3A06CF002B6BF8 /* TPChartBar.h in Headers */,
+				F2E97E1E0F3A166D002B6BF8 /* TPChartBasic.h in Headers */,
+				F289510C0F3A19C600166F2B /* TPChartVenn.h in Headers */,
+				F211C81E0F3AE4F800DBBC3F /* TPParameterSolidFill.h in Headers */,
+				F211C8560F3AEE4500DBBC3F /* TPParameterProtocols.h in Headers */,
+				F211C9690F3B061800DBBC3F /* TPChartOMeter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* TPGoogleChartAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "TPGoogleChartAPI" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+				F2E97CC00F39FC51002B6BF8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TPGoogleChartAPI;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = TPGoogleChartAPI;
+			productReference = 8DC2EF5B0486A6940098B216 /* TPGoogleChartAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F20CAB940F373BCD00B59304 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F20CAB990F373BCE00B59304 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				F20CAB900F373BCD00B59304 /* Resources */,
+				F20CAB910F373BCD00B59304 /* Sources */,
+				F20CAB920F373BCD00B59304 /* Frameworks */,
+				F20CAB930F373BCD00B59304 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = F20CAB950F373BCD00B59304 /* Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "TPGoogleChartAPI" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* TPGoogleChartAPI */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* TPGoogleChartAPI */,
+				F20CAB940F373BCD00B59304 /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F20CAB900F373BCD00B59304 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F20CAB930F373BCD00B59304 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		F2E97CC00F39FC51002B6BF8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#  Build the doxygen documentation for the project and load the docset into Xcode.\n\n#  Use the following to adjust the value of the $DOXYGEN_PATH User-Defined Setting:\n#    Binary install location: /Applications/Doxygen.app/Contents/Resources/doxygen\n#    Source build install location: /usr/local/bin/doxygen\n\n#  If the config file doesn't exist, run 'doxygen -g $SOURCE_ROOT/doxygen.config' to \n#   a get default file.\n\nif ! [ -f $SOURCE_ROOT/doxygen.config ] \nthen \n  echo doxygen config file does not exist\n  $DOXYGEN_PATH -g $SOURCE_ROOT/doxygen.config\nfi\n\n#  Append the proper input/output directories and docset info to the config file.\n#  This works even though values are assigned higher up in the file. Easier than sed.\n\ncp $SOURCE_ROOT/doxygen.config $TEMP_DIR/doxygen.config\n\necho \"INPUT = $SOURCE_ROOT\" >> $TEMP_DIR/doxygen.config\necho \"EXCLUDE_PATTERNS = *Test*\" >> $TEMP_DIR/doxygen.config\necho \"OUTPUT_DIRECTORY = $SOURCE_ROOT/DoxygenDocs.docset\" >> $TEMP_DIR/doxygen.config\necho \"GENERATE_DOCSET        = YES\" >> $TEMP_DIR/doxygen.config\necho \"DOCSET_BUNDLE_ID       = net.v1ru8.TPGoogleChartAPI\" >> $TEMP_DIR/doxygen.config\n\n#  Run doxygen on the updated config file.\n#  Note: doxygen creates a Makefile that does most of the heavy lifting.\n\n$DOXYGEN_PATH $TEMP_DIR/doxygen.config\n\n#  make will invoke docsetutil. Take a look at the Makefile to see how this is done.\n\nmake -C $SOURCE_ROOT/DoxygenDocs.docset/html install\n\n#  Construct a temporary applescript file to tell Xcode to load a docset.\n\nrm -f $TEMP_DIR/loadDocSet.scpt\n\necho \"tell application \\\"Xcode\\\"\" >> $TEMP_DIR/loadDocSet.scpt\necho \"load documentation set with path \\\"/Users/$USER/Library/Developer/Shared/Documentation/DocSets/\\\"\" \n     >> $TEMP_DIR/loadDocSet.scpt\necho \"end tell\" >> $TEMP_DIR/loadDocSet.scpt\n\n#  Run the load-docset applescript command.\n\nosascript $TEMP_DIR/loadDocSet.scpt\n\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20CAAFD0F37322000B59304 /* TPChart.m in Sources */,
+				F20CACC70F3748C700B59304 /* TPChartLine.m in Sources */,
+				F237C5460F38D561008D5427 /* TPParameterAxisStyle.m in Sources */,
+				F2CF26750F38EBFF004F4D3C /* TPParameterChartColor.m in Sources */,
+				F2CF267B0F38ECB6004F4D3C /* TPColor.m in Sources */,
+				F2CF26CC0F38F6EC004F4D3C /* TPChartPie.m in Sources */,
+				F2E97D430F3A06CF002B6BF8 /* TPChartBar.m in Sources */,
+				F2E97E1F0F3A166D002B6BF8 /* TPChartBasic.m in Sources */,
+				F289510D0F3A19C600166F2B /* TPChartVenn.m in Sources */,
+				F211C81F0F3AE4F800DBBC3F /* TPParameterSolidFill.m in Sources */,
+				F211C96A0F3B061800DBBC3F /* TPChartOMeter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F20CAB910F373BCD00B59304 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20CABA70F373C4E00B59304 /* TPChart.m in Sources */,
+				F20CABA80F373C4E00B59304 /* TPChartTest.m in Sources */,
+				F20CACC50F3748C700B59304 /* TPChartLine.m in Sources */,
+				F20CACDB0F374B3E00B59304 /* TPChartLineTest.m in Sources */,
+				F237C5440F38D561008D5427 /* TPParameterAxisStyle.m in Sources */,
+				F2CF26730F38EBFF004F4D3C /* TPParameterChartColor.m in Sources */,
+				F2CF26790F38ECB6004F4D3C /* TPColor.m in Sources */,
+				F2CF268D0F38EEB3004F4D3C /* TPColorTest.m in Sources */,
+				F2CF26CA0F38F6EC004F4D3C /* TPChartPie.m in Sources */,
+				F2CF26F80F38FC8E004F4D3C /* TPChartPieTest.m in Sources */,
+				F2E97D410F3A06CF002B6BF8 /* TPChartBar.m in Sources */,
+				F2E97D5F0F3A0C74002B6BF8 /* TPChartBarTest.m in Sources */,
+				F2E97E1D0F3A166D002B6BF8 /* TPChartBasic.m in Sources */,
+				F289510B0F3A19C600166F2B /* TPChartVenn.m in Sources */,
+				F211C81D0F3AE4F800DBBC3F /* TPParameterSolidFill.m in Sources */,
+				F211C8690F3AF0F200DBBC3F /* TPParameterSolidFillTest.m in Sources */,
+				F211C96B0F3B061800DBBC3F /* TPChartOMeter.m in Sources */,
+				F211C9910F3B079000DBBC3F /* TPChartOMeterTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DOC_WARNINGS = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TPGoogleChartAPI_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = TPGoogleChartAPI;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DOC_WARNINGS = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TPGoogleChartAPI_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = TPGoogleChartAPI;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+		F20CAB970F373BCE00B59304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "Tests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Tests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F20CAB980F373BCE00B59304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "Tests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Tests;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "TPGoogleChartAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "TPGoogleChartAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F20CAB990F373BCE00B59304 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F20CAB970F373BCE00B59304 /* Debug */,
+				F20CAB980F373BCE00B59304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
