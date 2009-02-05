@@ -68,4 +68,18 @@
  * @param fillColors the solid fill parameters
  */
 -(void)setFillColors:(TPParameterSolidFill *)fillColors;
+
+@end
+
+@class TPParameterDataScaling;
+/**
+ * Protocol for charts who have data scaling
+ */
+@protocol TPChartDataScaling
+
+/**
+ * @param scalingData scaling data
+ */
+-(void)setScalingData:(TPParameterDataScaling *)scalingData;
+
 @end

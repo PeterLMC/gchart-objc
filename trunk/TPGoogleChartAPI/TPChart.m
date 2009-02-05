@@ -60,7 +60,9 @@
     if(fillColors){
         [url appendString:[fillColors partialURL]];
     }
-    
+    if(scaling){
+        [url appendString:[scaling partialURL]];
+    }
     return url;
 }
 
@@ -75,5 +77,11 @@
 -(void)setFillColors:(TPParameterSolidFill *)newFillColor
 {
     fillColors = newFillColor;
+}
+
+#pragma mark Protocol TPChartDataScaling
+-(void)setScalingData:(TPParameterDataScaling *)scalingDta
+{
+    scaling = scalingDta;
 }
 @end

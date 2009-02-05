@@ -1,5 +1,5 @@
 //
-//  TPChart.h
+//  TPParameterDataScaling.m
 //  TPGoogleChartAPI
 //
 //  Copyright (c) 2009 Thomas Post. All rights reserved.
@@ -26,60 +26,45 @@
 //  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-#import <Foundation/Foundation.h>
-#import "TPParameterProtocols.h"
+#import "TPParameterDataScaling.h"
 
-#define kGoogleChartAPIURL @"http://chart.apis.google.com/chart?"
 
-/**
- * The base class of all charts
- * manages the charts data and their titles
- */
-@interface TPChart : NSObject<TPChartSolidFill,TPChartColor,TPChartDataScaling> {
-@private
-    NSSize size;
-    TPParameterSolidFill *fillColors;
-    TPParameterChartColor *colors;
-    TPParameterDataScaling *scaling;
+@implementation TPParameterDataScaling
+
+- (id) init
+{
+    self = [super init];
+    if (self != nil) {
+        scalingData = [NSMutableArray arrayWithCapacity:128];
+    }
+    return self;
 }
-/**
- * Size of the chart
- */
-@property NSSize size;
 
-/**
- * URL to generate the chart
- * @return the url who generates the chart
- */
-- (NSMutableString *)URL;
+- (NSMutableString *)partialURL
+{
+    NSMutableString *url = [NSMutableString string];
+    if([scalingData count] > 0){
+        [url appendString:@"&chds="];
+        for(NSArray *values in scalingData){
+            [url appendString:[NSString stringWithFormat:@"%f,%f",[[values objectAtIndex:0] doubleValue],[[values objectAtIndex:1] doubleValue],nil]];
+            if(![values isEqualToArray:[scalingData lastObject]]){
+                [url appendString:@","];
+            }
+        }
+    }
+    return url;
+}
 
-/**
- * Returns a request for the generated Image
- * @return request for a png image
- */
-- (NSURLRequest *)imageRequest;
-
+- (void)setValueForDataSet:(NSInteger)index 
+                  minValue:(NSNumber *)min 
+                  maxValue:(NSNumber *)max
+{
+    NSArray *newValues = [NSArray arrayWithObjects:min,max,nil];
+    @try {
+        [scalingData replaceObjectAtIndex:index withObject:newValues];
+    }
+    @catch ( NSException * e) {
+        [scalingData addObject:newValues];
+    }
+}
 @end
-
-
-
-
-
-/*
- * Protocols for spezial Parameters
- *
- */
-
-
-/**
- * Protocol for Classes that have a method that returns a part of a URL
- *
- */
- @protocol TPAddsPartToTheURL
-/**
- * Returns part of the URL
- */
--(NSMutableString *)partialURL;
-
-@end
-

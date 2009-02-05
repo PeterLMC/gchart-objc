@@ -1,5 +1,5 @@
 //
-//  TPChart.h
+//  TPParameterDataScaling.h
 //  TPGoogleChartAPI
 //
 //  Copyright (c) 2009 Thomas Post. All rights reserved.
@@ -27,59 +27,23 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TPParameterProtocols.h"
-
-#define kGoogleChartAPIURL @"http://chart.apis.google.com/chart?"
+#import "TPChart.h"
 
 /**
- * The base class of all charts
- * manages the charts data and their titles
+ * This class is responsible for data scaling
  */
-@interface TPChart : NSObject<TPChartSolidFill,TPChartColor,TPChartDataScaling> {
+@interface TPParameterDataScaling : NSObject<TPAddsPartToTheURL> {
 @private
-    NSSize size;
-    TPParameterSolidFill *fillColors;
-    TPParameterChartColor *colors;
-    TPParameterDataScaling *scaling;
+    NSMutableArray *scalingData;
 }
-/**
- * Size of the chart
- */
-@property NSSize size;
 
 /**
- * URL to generate the chart
- * @return the url who generates the chart
+ * Set a new scaling value for a specified index
+ * @param index dataset to scale\n (e.g. line1 = index 0, line2 = index1,...)
+ * @param min min value
+ * @param max max value
  */
-- (NSMutableString *)URL;
-
-/**
- * Returns a request for the generated Image
- * @return request for a png image
- */
-- (NSURLRequest *)imageRequest;
-
+- (void)setValueForDataSet:(NSInteger)index 
+                  minValue:(NSNumber *)min 
+                  maxValue:(NSNumber *)max;
 @end
-
-
-
-
-
-/*
- * Protocols for spezial Parameters
- *
- */
-
-
-/**
- * Protocol for Classes that have a method that returns a part of a URL
- *
- */
- @protocol TPAddsPartToTheURL
-/**
- * Returns part of the URL
- */
--(NSMutableString *)partialURL;
-
-@end
-

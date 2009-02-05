@@ -11,8 +11,6 @@
 		F20CAAFC0F37322000B59304 /* TPChart.h in Headers */ = {isa = PBXBuildFile; fileRef = F20CAAFA0F37322000B59304 /* TPChart.h */; };
 		F20CAAFD0F37322000B59304 /* TPChart.m in Sources */ = {isa = PBXBuildFile; fileRef = F20CAAFB0F37322000B59304 /* TPChart.m */; };
 		F20CAB9A0F373BF300B59304 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20CAB7A0F373B8500B59304 /* SenTestingKit.framework */; };
-		F20CAB9F0F373C3600B59304 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20CAB9E0F373C3600B59304 /* Cocoa.framework */; };
-		F20CABA00F373C3600B59304 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20CAB9E0F373C3600B59304 /* Cocoa.framework */; };
 		F20CABA70F373C4E00B59304 /* TPChart.m in Sources */ = {isa = PBXBuildFile; fileRef = F20CAAFB0F37322000B59304 /* TPChart.m */; };
 		F20CABA80F373C4E00B59304 /* TPChartTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F20CAB760F373A2D00B59304 /* TPChartTest.m */; };
 		F20CACC50F3748C700B59304 /* TPChartLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F20CACC40F3748C700B59304 /* TPChartLine.m */; };
@@ -34,6 +32,12 @@
 		F289510B0F3A19C600166F2B /* TPChartVenn.m in Sources */ = {isa = PBXBuildFile; fileRef = F289510A0F3A19C600166F2B /* TPChartVenn.m */; };
 		F289510C0F3A19C600166F2B /* TPChartVenn.h in Headers */ = {isa = PBXBuildFile; fileRef = F28951090F3A19C600166F2B /* TPChartVenn.h */; };
 		F289510D0F3A19C600166F2B /* TPChartVenn.m in Sources */ = {isa = PBXBuildFile; fileRef = F289510A0F3A19C600166F2B /* TPChartVenn.m */; };
+		F2ADD6020F3B186B00278188 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
+		F2ADD6050F3B187C00278188 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
+		F2ADD60C0F3B1A3500278188 /* TPParameterDataScaling.h in Headers */ = {isa = PBXBuildFile; fileRef = F2ADD60A0F3B1A3500278188 /* TPParameterDataScaling.h */; };
+		F2ADD60D0F3B1A3500278188 /* TPParameterDataScaling.m in Sources */ = {isa = PBXBuildFile; fileRef = F2ADD60B0F3B1A3500278188 /* TPParameterDataScaling.m */; };
+		F2ADD60E0F3B1A3500278188 /* TPParameterDataScaling.m in Sources */ = {isa = PBXBuildFile; fileRef = F2ADD60B0F3B1A3500278188 /* TPParameterDataScaling.m */; };
+		F2ADD66A0F3B20AC00278188 /* TPParameterDataScalingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F2ADD6690F3B20AC00278188 /* TPParameterDataScalingTest.m */; };
 		F2CF26730F38EBFF004F4D3C /* TPParameterChartColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CF26720F38EBFF004F4D3C /* TPParameterChartColor.m */; };
 		F2CF26740F38EBFF004F4D3C /* TPParameterChartColor.h in Headers */ = {isa = PBXBuildFile; fileRef = F2CF26710F38EBFF004F4D3C /* TPParameterChartColor.h */; };
 		F2CF26750F38EBFF004F4D3C /* TPParameterChartColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CF26720F38EBFF004F4D3C /* TPParameterChartColor.m */; };
@@ -69,7 +73,6 @@
 		F20CAB7A0F373B8500B59304 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		F20CAB950F373BCD00B59304 /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20CAB960F373BCD00B59304 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
-		F20CAB9E0F373C3600B59304 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		F20CACC30F3748C700B59304 /* TPChartLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChartLine.h; sourceTree = "<group>"; };
 		F20CACC40F3748C700B59304 /* TPChartLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChartLine.m; sourceTree = "<group>"; };
 		F20CACD90F374B3E00B59304 /* TPChartLineTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChartLineTest.h; sourceTree = "<group>"; };
@@ -87,6 +90,10 @@
 		F237C5430F38D561008D5427 /* TPParameterAxisStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPParameterAxisStyle.m; sourceTree = "<group>"; };
 		F28951090F3A19C600166F2B /* TPChartVenn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChartVenn.h; sourceTree = "<group>"; };
 		F289510A0F3A19C600166F2B /* TPChartVenn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChartVenn.m; sourceTree = "<group>"; };
+		F2ADD60A0F3B1A3500278188 /* TPParameterDataScaling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPParameterDataScaling.h; sourceTree = "<group>"; };
+		F2ADD60B0F3B1A3500278188 /* TPParameterDataScaling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPParameterDataScaling.m; sourceTree = "<group>"; };
+		F2ADD6680F3B20AC00278188 /* TPParameterDataScalingTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPParameterDataScalingTest.h; sourceTree = "<group>"; };
+		F2ADD6690F3B20AC00278188 /* TPParameterDataScalingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPParameterDataScalingTest.m; sourceTree = "<group>"; };
 		F2CF26710F38EBFF004F4D3C /* TPParameterChartColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPParameterChartColor.h; sourceTree = "<group>"; };
 		F2CF26720F38EBFF004F4D3C /* TPParameterChartColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPParameterChartColor.m; sourceTree = "<group>"; };
 		F2CF26770F38ECB6004F4D3C /* TPColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPColor.h; sourceTree = "<group>"; };
@@ -110,7 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F20CAB9F0F373C3600B59304 /* Cocoa.framework in Frameworks */,
+				F2ADD6020F3B186B00278188 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,8 +125,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2ADD6050F3B187C00278188 /* Foundation.framework in Frameworks */,
 				F20CAB9A0F373BF300B59304 /* SenTestingKit.framework in Frameworks */,
-				F20CABA00F373C3600B59304 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +185,7 @@
 		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F20CAB9E0F373C3600B59304 /* Cocoa.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -189,7 +196,6 @@
 				F20CAB7A0F373B8500B59304 /* SenTestingKit.framework */,
 				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
 				D2F7E79907B2D74100F64583 /* CoreData.framework */,
-				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
@@ -219,6 +225,8 @@
 				F211C8680F3AF0F200DBBC3F /* TPParameterSolidFillTest.m */,
 				F211C98F0F3B079000DBBC3F /* TPChartOMeterTest.h */,
 				F211C9900F3B079000DBBC3F /* TPChartOMeterTest.m */,
+				F2ADD6680F3B20AC00278188 /* TPParameterDataScalingTest.h */,
+				F2ADD6690F3B20AC00278188 /* TPParameterDataScalingTest.m */,
 			);
 			name = tests;
 			sourceTree = "<group>";
@@ -257,13 +265,15 @@
 		F237C53B0F38D51B008D5427 /* Parameters */ = {
 			isa = PBXGroup;
 			children = (
+				F211C8550F3AEE4500DBBC3F /* TPParameterProtocols.h */,
 				F237C5420F38D561008D5427 /* TPParameterAxisStyle.h */,
 				F237C5430F38D561008D5427 /* TPParameterAxisStyle.m */,
 				F2CF26710F38EBFF004F4D3C /* TPParameterChartColor.h */,
 				F2CF26720F38EBFF004F4D3C /* TPParameterChartColor.m */,
 				F211C81B0F3AE4F800DBBC3F /* TPParameterSolidFill.h */,
 				F211C81C0F3AE4F800DBBC3F /* TPParameterSolidFill.m */,
-				F211C8550F3AEE4500DBBC3F /* TPParameterProtocols.h */,
+				F2ADD60A0F3B1A3500278188 /* TPParameterDataScaling.h */,
+				F2ADD60B0F3B1A3500278188 /* TPParameterDataScaling.m */,
 			);
 			name = Parameters;
 			sourceTree = "<group>";
@@ -296,6 +306,7 @@
 				F211C81E0F3AE4F800DBBC3F /* TPParameterSolidFill.h in Headers */,
 				F211C8560F3AEE4500DBBC3F /* TPParameterProtocols.h in Headers */,
 				F211C9690F3B061800DBBC3F /* TPChartOMeter.h in Headers */,
+				F2ADD60C0F3B1A3500278188 /* TPParameterDataScaling.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +413,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#  Build the doxygen documentation for the project and load the docset into Xcode.\n\n#  Use the following to adjust the value of the $DOXYGEN_PATH User-Defined Setting:\n#    Binary install location: /Applications/Doxygen.app/Contents/Resources/doxygen\n#    Source build install location: /usr/local/bin/doxygen\n\n#  If the config file doesn't exist, run 'doxygen -g $SOURCE_ROOT/doxygen.config' to \n#   a get default file.\n\nif ! [ -f $SOURCE_ROOT/doxygen.config ] \nthen \n  echo doxygen config file does not exist\n  $DOXYGEN_PATH -g $SOURCE_ROOT/doxygen.config\nfi\n\n#  Append the proper input/output directories and docset info to the config file.\n#  This works even though values are assigned higher up in the file. Easier than sed.\n\ncp $SOURCE_ROOT/doxygen.config $TEMP_DIR/doxygen.config\n\necho \"INPUT = $SOURCE_ROOT\" >> $TEMP_DIR/doxygen.config\necho \"EXCLUDE_PATTERNS = *Test*\" >> $TEMP_DIR/doxygen.config\necho \"OUTPUT_DIRECTORY = $SOURCE_ROOT/DoxygenDocs.docset\" >> $TEMP_DIR/doxygen.config\necho \"GENERATE_DOCSET        = YES\" >> $TEMP_DIR/doxygen.config\necho \"DOCSET_BUNDLE_ID       = net.v1ru8.TPGoogleChartAPI\" >> $TEMP_DIR/doxygen.config\n\n#  Run doxygen on the updated config file.\n#  Note: doxygen creates a Makefile that does most of the heavy lifting.\n\n$DOXYGEN_PATH $TEMP_DIR/doxygen.config\n\n#  make will invoke docsetutil. Take a look at the Makefile to see how this is done.\n\nmake -C $SOURCE_ROOT/DoxygenDocs.docset/html install\n\n#  Construct a temporary applescript file to tell Xcode to load a docset.\n\nrm -f $TEMP_DIR/loadDocSet.scpt\n\necho \"tell application \\\"Xcode\\\"\" >> $TEMP_DIR/loadDocSet.scpt\necho \"load documentation set with path \\\"/Users/$USER/Library/Developer/Shared/Documentation/DocSets/\\\"\" \n     >> $TEMP_DIR/loadDocSet.scpt\necho \"end tell\" >> $TEMP_DIR/loadDocSet.scpt\n\n#  Run the load-docset applescript command.\n\nosascript $TEMP_DIR/loadDocSet.scpt\n\nexit 0";
+			shellScript = "#  Build the doxygen documentation for the project and load the docset into Xcode.\n\n#  Use the following to adjust the value of the $DOXYGEN_PATH User-Defined Setting:\n#    Binary install location: /Applications/Doxygen.app/Contents/Resources/doxygen\n#    Source build install location: /usr/local/bin/doxygen\n\n#  If the config file doesn't exist, run 'doxygen -g $SOURCE_ROOT/doxygen.config' to \n#   a get default file.\n\nif ! [ -f $SOURCE_ROOT/doxygen.config ] \nthen \n  echo doxygen config file does not exist\n  $DOXYGEN_PATH -g $SOURCE_ROOT/doxygen.config\nfi\n\n#  Append the proper input/output directories and docset info to the config file.\n#  This works even though values are assigned higher up in the file. Easier than sed.\n\ncp $SOURCE_ROOT/doxygen.config $TEMP_DIR/doxygen.config\n\necho \"INPUT = $SOURCE_ROOT\" >> $TEMP_DIR/doxygen.config\necho \"EXCLUDE_PATTERNS = *Test*\" >> $TEMP_DIR/doxygen.config\necho \"OUTPUT_DIRECTORY = $SOURCE_ROOT/DoxygenDocs.docset\" >> $TEMP_DIR/doxygen.config\necho \"GENERATE_DOCSET        = YES\" >> $TEMP_DIR/doxygen.config\necho \"DOCSET_BUNDLE_ID       = net.v1ru8.TPGoogleChartAPI\" >> $TEMP_DIR/doxygen.config\n\n#  Run doxygen on the updated config file.\n#  Note: doxygen creates a Makefile that does most of the heavy lifting.\n\n$DOXYGEN_PATH $TEMP_DIR/doxygen.config\n\n#  make will invoke docsetutil. Take a look at the Makefile to see how this is done.\n\n#make -C $SOURCE_ROOT/DoxygenDocs.docset/html install\n\n#  Construct a temporary applescript file to tell Xcode to load a docset.\n\n#rm -f $TEMP_DIR/loadDocSet.scpt\n\n#echo \"tell application \\\"Xcode\\\"\" >> $TEMP_DIR/loadDocSet.scpt\n#echo \"load documentation set with path \\\"/Users/$USER/Library/Developer/Shared/Documentation/DocSets/\\\"\" \n     >> $TEMP_DIR/loadDocSet.scpt\n#echo \"end tell\" >> $TEMP_DIR/loadDocSet.scpt\n\n#  Run the load-docset applescript command.\n\n#osascript $TEMP_DIR/loadDocSet.scpt\n\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -422,6 +433,7 @@
 				F289510D0F3A19C600166F2B /* TPChartVenn.m in Sources */,
 				F211C81F0F3AE4F800DBBC3F /* TPParameterSolidFill.m in Sources */,
 				F211C96A0F3B061800DBBC3F /* TPChartOMeter.m in Sources */,
+				F2ADD60D0F3B1A3500278188 /* TPParameterDataScaling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +459,8 @@
 				F211C8690F3AF0F200DBBC3F /* TPParameterSolidFillTest.m in Sources */,
 				F211C96B0F3B061800DBBC3F /* TPChartOMeter.m in Sources */,
 				F211C9910F3B079000DBBC3F /* TPChartOMeterTest.m in Sources */,
+				F2ADD60E0F3B1A3500278188 /* TPParameterDataScaling.m in Sources */,
+				F2ADD66A0F3B20AC00278188 /* TPParameterDataScalingTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
