@@ -178,6 +178,7 @@ boxfont setfont
 (< TPAddsPartToTheURL >) cw
 (< TPChartSolidFill >) cw
 (< TPChartColor >) cw
+(< TPChartDataScaling >) cw
 /boxwidth boxwidth marginwidth 2 mul add def
 /xspacing boxwidth distx add def
 /yspacing boxheight disty add def
@@ -189,27 +190,30 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (TPChartVenn) 1 0 box
- (TPChart) 0.5 1 box
- (< TPAddsPartToTheURL >) 1.5 1 box
+ (TPChartVenn) 1.5 0 box
+ (TPChart) 1 1 box
+ (< TPAddsPartToTheURL >) 2 1 box
  (< TPChartSolidFill >) 0 2 box
  (< TPChartColor >) 1 2 box
+ (< TPChartDataScaling >) 2 2 box
 
 % ----- relations -----
 
 solid
-0 1 0 out
+0 1.5 0 out
 solid
-0.5 1.5 1 conn
+1 2 1 conn
 solid
-1 0.5 1 in
+1 1 1 in
 solid
-0 0.5 1 out
+0 1 1 out
 solid
-0 1 2 conn
+0 2 2 conn
 solid
-1 1.5 1 in
+1 2 1 in
 solid
 1 0 2 in
 solid
 1 1 2 in
+solid
+1 2 2 in
