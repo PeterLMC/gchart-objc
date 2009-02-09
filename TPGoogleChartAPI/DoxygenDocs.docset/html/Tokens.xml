@@ -332,6 +332,76 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>TPChartSerializationPropertyList-p</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>cl</Type>
+      <Scope></Scope>
+    </TokenIdentifier>
+    <Path>protocol_t_p_chart_serialization_property_list-p.html</Path>
+    <DeclaredIn>TPChartSerializationProtocols.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>propertyList</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>func</Type>
+      <Scope>TPChartSerializationPropertyList-p</Scope>
+    </TokenIdentifier>
+    <Path>protocol_t_p_chart_serialization_property_list-p.html</Path>
+    <Anchor>04773baf998426793bf2e587f4331927</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>objectFromPropertyList:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>func</Type>
+      <Scope>TPChartSerializationPropertyList-p</Scope>
+    </TokenIdentifier>
+    <Path>protocol_t_p_chart_serialization_property_list-p.html</Path>
+    <Anchor>1c253fc328b5a9d3a5afacbb69cd20f5</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>TPChartSerializationPropertyListDictionary-p</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>cl</Type>
+      <Scope></Scope>
+    </TokenIdentifier>
+    <Path>protocol_t_p_chart_serialization_property_list_dictionary-p.html</Path>
+    <DeclaredIn>TPChartSerializationProtocols.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>initWithPlist:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>func</Type>
+      <Scope>TPChartSerializationPropertyListDictionary-p</Scope>
+    </TokenIdentifier>
+    <Path>protocol_t_p_chart_serialization_property_list_dictionary-p.html</Path>
+    <Anchor>e4bb4f36e40839798379b7457f347efd</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>serializableDictionary</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>func</Type>
+      <Scope>TPChartSerializationPropertyListDictionary-p</Scope>
+    </TokenIdentifier>
+    <Path>protocol_t_p_chart_serialization_property_list_dictionary-p.html</Path>
+    <Anchor>fe0efcbee8a5b37a2c14568c6c111348</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>createChart:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>func</Type>
+      <Scope>TPChartSerializationPropertyListDictionary-p</Scope>
+    </TokenIdentifier>
+    <Path>protocol_t_p_chart_serialization_property_list_dictionary-p.html</Path>
+    <Anchor>be3a5d2f8864a8d2cae2f98322ae9c62</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>TPChartSolidFill-p</Name>
       <APILanguage>occ</APILanguage>
       <Type>cl</Type>
@@ -599,6 +669,26 @@
     </TokenIdentifier>
     <Path>interface_t_p_parameter_data_scaling.html</Path>
     <Anchor>3dfe9bc7aed1db751668d2b35ed5f96a</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>TPParameterDataScaling(Serialization)</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>intf</Type>
+      <Scope></Scope>
+    </TokenIdentifier>
+    <Path>interface_t_p_parameter_data_scaling_07_serialization_08.html</Path>
+    <DeclaredIn>TPParameterDataScalingSerialization.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setScalingData:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>intfm</Type>
+      <Scope>TPParameterDataScaling(Serialization)</Scope>
+    </TokenIdentifier>
+    <Path>interface_t_p_parameter_data_scaling_07_serialization_08.html</Path>
+    <Anchor>517a0240761209c835c4a395f649afe3</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
