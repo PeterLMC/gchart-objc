@@ -22,12 +22,20 @@
           <Path>interface_t_p_chart.html</Path>
          </Node>
          <Node>
+          <Name>TPChart(Serialization)</Name>
+          <Path>interface_t_p_chart_07_serialization_08.html</Path>
+         </Node>
+         <Node>
           <Name>TPChartBar</Name>
           <Path>interface_t_p_chart_bar.html</Path>
          </Node>
          <Node>
           <Name>TPChartBasic</Name>
           <Path>interface_t_p_chart_basic.html</Path>
+         </Node>
+         <Node>
+          <Name>TPChartBasic(Serialization)</Name>
+          <Path>interface_t_p_chart_basic_07_serialization_08.html</Path>
          </Node>
          <Node>
           <Name>&lt; TPChartColor &gt;</Name>
@@ -50,6 +58,18 @@
           <Path>interface_t_p_chart_pie.html</Path>
          </Node>
          <Node>
+          <Name>TPChartPie(Serialization)</Name>
+          <Path>interface_t_p_chart_pie_07_serialization_08.html</Path>
+         </Node>
+         <Node>
+          <Name>&lt; TPChartSerializationPropertyList &gt;</Name>
+          <Path>protocol_t_p_chart_serialization_property_list-p.html</Path>
+         </Node>
+         <Node>
+          <Name>&lt; TPChartSerializationPropertyListDictionary &gt;</Name>
+          <Path>protocol_t_p_chart_serialization_property_list_dictionary-p.html</Path>
+         </Node>
+         <Node>
           <Name>&lt; TPChartSolidFill &gt;</Name>
           <Path>protocol_t_p_chart_solid_fill-p.html</Path>
          </Node>
@@ -62,6 +82,10 @@
           <Path>interface_t_p_color.html</Path>
          </Node>
          <Node>
+          <Name>TPColor(Serialization)</Name>
+          <Path>interface_t_p_color_07_serialization_08.html</Path>
+         </Node>
+         <Node>
           <Name>TPParameterAxisStyle</Name>
           <Path>interface_t_p_parameter_axis_style.html</Path>
          </Node>
@@ -70,12 +94,24 @@
           <Path>interface_t_p_parameter_chart_color.html</Path>
          </Node>
          <Node>
+          <Name>TPParameterChartColor(Serialization)</Name>
+          <Path>interface_t_p_parameter_chart_color_07_serialization_08.html</Path>
+         </Node>
+         <Node>
           <Name>TPParameterDataScaling</Name>
           <Path>interface_t_p_parameter_data_scaling.html</Path>
          </Node>
          <Node>
+          <Name>TPParameterDataScaling(Serialization)</Name>
+          <Path>interface_t_p_parameter_data_scaling_07_serialization_08.html</Path>
+         </Node>
+         <Node>
           <Name>TPParameterSolidFill</Name>
           <Path>interface_t_p_parameter_solid_fill.html</Path>
+         </Node>
+         <Node>
+          <Name>TPParameterSolidFill(Serialization)</Name>
+          <Path>interface_t_p_parameter_solid_fill_07_serialization_08.html</Path>
          </Node>
         </Subnodes>
        </Node>
@@ -146,6 +182,14 @@
           </Subnodes>
          </Node>
          <Node>
+          <Name>TPChart(Serialization)</Name>
+          <Path>interface_t_p_chart_07_serialization_08.html</Path>
+         </Node>
+         <Node>
+          <Name>TPChartBasic(Serialization)</Name>
+          <Path>interface_t_p_chart_basic_07_serialization_08.html</Path>
+         </Node>
+         <Node>
           <Name>&lt; TPChartColor &gt;</Name>
           <Path>protocol_t_p_chart_color-p.html</Path>
           <Subnodes>
@@ -180,6 +224,18 @@
           </Subnodes>
          </Node>
          <Node>
+          <Name>TPChartPie(Serialization)</Name>
+          <Path>interface_t_p_chart_pie_07_serialization_08.html</Path>
+         </Node>
+         <Node>
+          <Name>&lt; TPChartSerializationPropertyList &gt;</Name>
+          <Path>protocol_t_p_chart_serialization_property_list-p.html</Path>
+         </Node>
+         <Node>
+          <Name>&lt; TPChartSerializationPropertyListDictionary &gt;</Name>
+          <Path>protocol_t_p_chart_serialization_property_list_dictionary-p.html</Path>
+         </Node>
+         <Node>
           <Name>&lt; TPChartSolidFill &gt;</Name>
           <Path>protocol_t_p_chart_solid_fill-p.html</Path>
           <Subnodes>
@@ -192,6 +248,22 @@
          <Node>
           <Name>TPColor</Name>
           <Path>interface_t_p_color.html</Path>
+         </Node>
+         <Node>
+          <Name>TPColor(Serialization)</Name>
+          <Path>interface_t_p_color_07_serialization_08.html</Path>
+         </Node>
+         <Node>
+          <Name>TPParameterChartColor(Serialization)</Name>
+          <Path>interface_t_p_parameter_chart_color_07_serialization_08.html</Path>
+         </Node>
+         <Node>
+          <Name>TPParameterDataScaling(Serialization)</Name>
+          <Path>interface_t_p_parameter_data_scaling_07_serialization_08.html</Path>
+         </Node>
+         <Node>
+          <Name>TPParameterSolidFill(Serialization)</Name>
+          <Path>interface_t_p_parameter_solid_fill_07_serialization_08.html</Path>
          </Node>
         </Subnodes>
        </Node>
