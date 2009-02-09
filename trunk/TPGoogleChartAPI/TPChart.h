@@ -32,7 +32,7 @@
 #define kGoogleChartAPIURL @"http://chart.apis.google.com/chart?"
 
 /**
- * The base class of all charts
+ * The base class of all charts. This is an abstract class. You should not instantiate it!
  * manages the charts data and their titles
  */
 @interface TPChart : NSObject<TPChartSolidFill,TPChartColor,TPChartDataScaling> {

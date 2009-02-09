@@ -1,5 +1,5 @@
 //
-//  TPParameterDataScaling.m
+//  TPChartSerialization.m
 //  TPGoogleChartAPI
 //
 //  Copyright (c) 2009 Thomas Post. All rights reserved.
@@ -26,44 +26,43 @@
 //  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-#import "TPParameterDataScaling.h"
+#import "TPChartSerialization.h"
+#import "TPParameterChartColorSerialization.h"
+#import "TPParameterSolidFillSerialization.h"
+#import "TPParameterDataScalingSerialization.h"
 
-@implementation TPParameterDataScaling
+@implementation  TPChart (Serialization)
 
-- (id) init
+- (NSMutableDictionary *)serializableDictionary
+{
+    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    if(colors){
+        [dic setObject:[colors propertyList] forKey:@"TPChartColors"];
+    } 
+    if(fillColors){
+        [dic setObject:[fillColors propertyList] forKey:@"TPChartFillColors"];
+    }
+    if(scaling){
+        [dic setObject:[scaling propertyList] forKey:@"TPChartScaling"];
+    }
+    NSArray *sizeSerialization = [NSArray arrayWithObjects:[NSNumber numberWithDouble:size.width],[NSNumber numberWithDouble:size.height],nil];
+    [dic setObject:sizeSerialization forKey:@"TPChartSize"];
+    return dic;
+}
+
+- (id)initWithPlist:(NSDictionary *)data
 {
     self = [super init];
     if (self != nil) {
-        scalingData = [NSMutableArray arrayWithCapacity:128];
+        size.width = [[[data objectForKey:@"TPChartSize"] objectAtIndex:0] doubleValue];
+        size.height = [[[data objectForKey:@"TPChartSize"] objectAtIndex:1] doubleValue];
+        
+        colors = [TPParameterChartColor objectFromPropertyList:[data objectForKey:@"TPChartColors"]];
+        fillColors = [TPParameterSolidFill objectFromPropertyList:[data objectForKey:@"TPChartFillColors"]];
+        scaling = [TPParameterDataScaling objectFromPropertyList:[data objectForKey:@"TPChartScaling"]];
     }
     return self;
 }
 
-- (NSMutableString *)partialURL
-{
-    NSMutableString *url = [NSMutableString string];
-    if([scalingData count] > 0){
-        [url appendString:@"&chds="];
-        for(NSArray *values in scalingData){
-            [url appendString:[NSString stringWithFormat:@"%f,%f",[[values objectAtIndex:0] doubleValue],[[values objectAtIndex:1] doubleValue],nil]];
-            if(![values isEqualToArray:[scalingData lastObject]]){
-                [url appendString:@","];
-            }
-        }
-    }
-    return url;
-}
 
-- (void)setValueForDataSet:(NSInteger)index 
-                  minValue:(NSNumber *)min 
-                  maxValue:(NSNumber *)max
-{
-    NSArray *newValues = [NSArray arrayWithObjects:min,max,nil];
-    @try {
-        [scalingData replaceObjectAtIndex:index withObject:newValues];
-    }
-    @catch ( NSException * e) {
-        [scalingData addObject:newValues];
-    }
-}
 @end

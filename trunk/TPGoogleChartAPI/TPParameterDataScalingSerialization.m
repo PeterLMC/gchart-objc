@@ -1,5 +1,5 @@
 //
-//  TPParameterDataScaling.m
+//  TPParameterDataScalingSerialization.m
 //  TPGoogleChartAPI
 //
 //  Copyright (c) 2009 Thomas Post. All rights reserved.
@@ -26,44 +26,28 @@
 //  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-#import "TPParameterDataScaling.h"
+#import "TPParameterDataScalingSerialization.h"
 
-@implementation TPParameterDataScaling
 
-- (id) init
+@implementation TPParameterDataScaling (Serialization)
++ (id)objectFromPropertyList:(id)plist
 {
-    self = [super init];
-    if (self != nil) {
-        scalingData = [NSMutableArray arrayWithCapacity:128];
+    if(plist){
+        TPParameterDataScaling *dataScaling = [[TPParameterDataScaling alloc] init];
+        [dataScaling setScalingData:plist];
+        return dataScaling;
+    } else {
+        return nil;
     }
-    return self;
 }
 
-- (NSMutableString *)partialURL
+- (id)propertyList
 {
-    NSMutableString *url = [NSMutableString string];
-    if([scalingData count] > 0){
-        [url appendString:@"&chds="];
-        for(NSArray *values in scalingData){
-            [url appendString:[NSString stringWithFormat:@"%f,%f",[[values objectAtIndex:0] doubleValue],[[values objectAtIndex:1] doubleValue],nil]];
-            if(![values isEqualToArray:[scalingData lastObject]]){
-                [url appendString:@","];
-            }
-        }
-    }
-    return url;
+    return scalingData;
 }
 
-- (void)setValueForDataSet:(NSInteger)index 
-                  minValue:(NSNumber *)min 
-                  maxValue:(NSNumber *)max
+- (void)setScalingData:(NSArray *)data
 {
-    NSArray *newValues = [NSArray arrayWithObjects:min,max,nil];
-    @try {
-        [scalingData replaceObjectAtIndex:index withObject:newValues];
-    }
-    @catch ( NSException * e) {
-        [scalingData addObject:newValues];
-    }
+    scalingData = [NSMutableArray arrayWithArray:data];
 }
 @end

@@ -60,7 +60,12 @@
 }
 - (void)setRowTitle:(NSString *)title withId:(NSInteger)rowId
 {
-    [rowTitles replaceObjectAtIndex:rowId withObject:title];
+    @try {
+        [rowTitles replaceObjectAtIndex:rowId withObject:title];
+    }
+    @catch (NSException * e) {
+        [rowTitles addObject:title];
+    }
 }
 - (void)setRowTtiles:(NSArray *)titles
 {
