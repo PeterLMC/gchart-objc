@@ -1,5 +1,5 @@
 //
-//  TPParameterDataScaling.m
+//  TPColorSerialization.m
 //  TPGoogleChartAPI
 //
 //  Copyright (c) 2009 Thomas Post. All rights reserved.
@@ -26,44 +26,22 @@
 //  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-#import "TPParameterDataScaling.h"
+#import "TPColorSerialization.h"
 
-@implementation TPParameterDataScaling
 
-- (id) init
+@implementation  TPColor (Serialization)
++ (id)objectFromPropertyList:(id)plist
 {
-    self = [super init];
-    if (self != nil) {
-        scalingData = [NSMutableArray arrayWithCapacity:128];
-    }
-    return self;
+    NSArray *colorCOmponents = [plist componentsSeparatedByString:@","];
+    TPColor *color = [TPColor colorWithRed:[[colorCOmponents objectAtIndex:0] intValue] 
+                                     green:[[colorCOmponents objectAtIndex:1] intValue] 
+                                      blue:[[colorCOmponents objectAtIndex:2] intValue]];
+    color.alpha = [[colorCOmponents objectAtIndex:3] intValue];
+    return color;
 }
 
-- (NSMutableString *)partialURL
+- (id)propertyList
 {
-    NSMutableString *url = [NSMutableString string];
-    if([scalingData count] > 0){
-        [url appendString:@"&chds="];
-        for(NSArray *values in scalingData){
-            [url appendString:[NSString stringWithFormat:@"%f,%f",[[values objectAtIndex:0] doubleValue],[[values objectAtIndex:1] doubleValue],nil]];
-            if(![values isEqualToArray:[scalingData lastObject]]){
-                [url appendString:@","];
-            }
-        }
-    }
-    return url;
-}
-
-- (void)setValueForDataSet:(NSInteger)index 
-                  minValue:(NSNumber *)min 
-                  maxValue:(NSNumber *)max
-{
-    NSArray *newValues = [NSArray arrayWithObjects:min,max,nil];
-    @try {
-        [scalingData replaceObjectAtIndex:index withObject:newValues];
-    }
-    @catch ( NSException * e) {
-        [scalingData addObject:newValues];
-    }
+    return [NSString stringWithFormat:@"%i,%i,%i,%i",red,green,blue,alpha];
 }
 @end

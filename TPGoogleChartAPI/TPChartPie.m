@@ -33,6 +33,15 @@
 
 @synthesize type,angle;
 
+- (id) init
+{
+    self = [super init];
+    if (self != nil) {
+        type = TPChartTypePieP3;
+    }
+    return self;
+}
+
 #pragma mark Protocol TPAddsPartToTheURL
 -(NSMutableString *)partialURL
 {

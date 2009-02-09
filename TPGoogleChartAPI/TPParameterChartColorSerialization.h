@@ -1,5 +1,5 @@
 //
-//  TPParameterDataScaling.m
+//  TPParameterChartColorSerialization.h
 //  TPGoogleChartAPI
 //
 //  Copyright (c) 2009 Thomas Post. All rights reserved.
@@ -25,45 +25,13 @@
 //  OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 //  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
+#import <Foundation/Foundation.h>
+#import "TPParameterChartColor.h"
+#import "TPChartSerializationProtocols.h"
 
-#import "TPParameterDataScaling.h"
+/**
+ * Serialization category for TPParameterChartColor
+ */
+@interface TPParameterChartColor (Serialization)<TPChartSerializationPropertyList>
 
-@implementation TPParameterDataScaling
-
-- (id) init
-{
-    self = [super init];
-    if (self != nil) {
-        scalingData = [NSMutableArray arrayWithCapacity:128];
-    }
-    return self;
-}
-
-- (NSMutableString *)partialURL
-{
-    NSMutableString *url = [NSMutableString string];
-    if([scalingData count] > 0){
-        [url appendString:@"&chds="];
-        for(NSArray *values in scalingData){
-            [url appendString:[NSString stringWithFormat:@"%f,%f",[[values objectAtIndex:0] doubleValue],[[values objectAtIndex:1] doubleValue],nil]];
-            if(![values isEqualToArray:[scalingData lastObject]]){
-                [url appendString:@","];
-            }
-        }
-    }
-    return url;
-}
-
-- (void)setValueForDataSet:(NSInteger)index 
-                  minValue:(NSNumber *)min 
-                  maxValue:(NSNumber *)max
-{
-    NSArray *newValues = [NSArray arrayWithObjects:min,max,nil];
-    @try {
-        [scalingData replaceObjectAtIndex:index withObject:newValues];
-    }
-    @catch ( NSException * e) {
-        [scalingData addObject:newValues];
-    }
-}
 @end

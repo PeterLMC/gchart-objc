@@ -1,5 +1,5 @@
 //
-//  TPParameterDataScaling.m
+//  TPChartBasicSerialization.m
 //  TPGoogleChartAPI
 //
 //  Copyright (c) 2009 Thomas Post. All rights reserved.
@@ -26,44 +26,29 @@
 //  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-#import "TPParameterDataScaling.h"
+#import "TPChartBasicSerialization.h"
+#import "TPChartSerialization.h"
 
-@implementation TPParameterDataScaling
+@implementation TPChartBasic (Serialization)
 
-- (id) init
+#pragma mark Protocol TPChartSerializationPropertyList
+
+- (id)initWithPlist:(NSDictionary *)data
 {
-    self = [super init];
+    self = [super initWithPlist:data];
     if (self != nil) {
-        scalingData = [NSMutableArray arrayWithCapacity:128];
+        rows = [data objectForKey:@"TPChartBasicRows"];
+        rowTitles = [data objectForKey:@"TPChartBasicRowTitles"];
     }
     return self;
 }
 
-- (NSMutableString *)partialURL
+- (NSMutableDictionary *)serializableDictionary
 {
-    NSMutableString *url = [NSMutableString string];
-    if([scalingData count] > 0){
-        [url appendString:@"&chds="];
-        for(NSArray *values in scalingData){
-            [url appendString:[NSString stringWithFormat:@"%f,%f",[[values objectAtIndex:0] doubleValue],[[values objectAtIndex:1] doubleValue],nil]];
-            if(![values isEqualToArray:[scalingData lastObject]]){
-                [url appendString:@","];
-            }
-        }
-    }
-    return url;
+    NSMutableDictionary *plist = [super serializableDictionary];
+    [plist setObject:rows forKey:@"TPChartBasicRows"];
+    [plist setObject:rowTitles forKey:@"TPChartBasicRowTitles"];
+    return plist;
 }
 
-- (void)setValueForDataSet:(NSInteger)index 
-                  minValue:(NSNumber *)min 
-                  maxValue:(NSNumber *)max
-{
-    NSArray *newValues = [NSArray arrayWithObjects:min,max,nil];
-    @try {
-        [scalingData replaceObjectAtIndex:index withObject:newValues];
-    }
-    @catch ( NSException * e) {
-        [scalingData addObject:newValues];
-    }
-}
 @end

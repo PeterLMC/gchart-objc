@@ -1,5 +1,5 @@
 //
-//  TPParameterDataScaling.m
+//  TPParameterChartColorSerialization.m
 //  TPGoogleChartAPI
 //
 //  Copyright (c) 2009 Thomas Post. All rights reserved.
@@ -25,45 +25,36 @@
 //  OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 //  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
+#import "TPParameterChartColorSerialization.h"
+#import "TPColorSerialization.h"
 
-#import "TPParameterDataScaling.h"
 
-@implementation TPParameterDataScaling
+@implementation TPParameterChartColor (Serialization)
 
-- (id) init
+#pragma mark Protocol TPChartSerializationPropertyList
+
+
++ (id)objectFromPropertyList:(id)plist
 {
-    self = [super init];
-    if (self != nil) {
-        scalingData = [NSMutableArray arrayWithCapacity:128];
-    }
-    return self;
-}
-
-- (NSMutableString *)partialURL
-{
-    NSMutableString *url = [NSMutableString string];
-    if([scalingData count] > 0){
-        [url appendString:@"&chds="];
-        for(NSArray *values in scalingData){
-            [url appendString:[NSString stringWithFormat:@"%f,%f",[[values objectAtIndex:0] doubleValue],[[values objectAtIndex:1] doubleValue],nil]];
-            if(![values isEqualToArray:[scalingData lastObject]]){
-                [url appendString:@","];
-            }
+    if(plist){
+        NSMutableArray *colors = [NSMutableArray array];
+        for(NSString *color in plist){
+            [colors addObject:[TPColor objectFromPropertyList:color]];
         }
+        TPParameterChartColor *chartColor = [[TPParameterChartColor alloc] init];
+        [chartColor setColors:colors];
+        return chartColor;
+    } else {
+        return nil;
     }
-    return url;
 }
 
-- (void)setValueForDataSet:(NSInteger)index 
-                  minValue:(NSNumber *)min 
-                  maxValue:(NSNumber *)max
+- (id)propertyList
 {
-    NSArray *newValues = [NSArray arrayWithObjects:min,max,nil];
-    @try {
-        [scalingData replaceObjectAtIndex:index withObject:newValues];
+    NSMutableArray *plistColors = [NSMutableArray array];
+    for(TPColor *color in colors){
+        [plistColors addObject:[color propertyList]];
     }
-    @catch ( NSException * e) {
-        [scalingData addObject:newValues];
-    }
+    return plistColors;
 }
 @end
