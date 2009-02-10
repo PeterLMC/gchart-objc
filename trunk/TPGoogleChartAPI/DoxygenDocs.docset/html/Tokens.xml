@@ -42,6 +42,16 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>axisStyle</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>func</Type>
+      <Scope>TPAxisStyle-p</Scope>
+    </TokenIdentifier>
+    <Path>protocol_t_p_axis_style-p.html</Path>
+    <Anchor>9a7d824177e264c439184e87ae6918fa</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>TPChart</Name>
       <APILanguage>occ</APILanguage>
       <Type>cl</Type>
@@ -222,6 +232,16 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>chartColors</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>func</Type>
+      <Scope>TPChartColor-p</Scope>
+    </TokenIdentifier>
+    <Path>protocol_t_p_chart_color-p.html</Path>
+    <Anchor>9af2239dc0deabe603fd194828b435e1</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>TPChartDataScaling-p</Name>
       <APILanguage>occ</APILanguage>
       <Type>cl</Type>
@@ -239,6 +259,16 @@
     </TokenIdentifier>
     <Path>protocol_t_p_chart_data_scaling-p.html</Path>
     <Anchor>940844c4e44e6f253f1b9b389646793d</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>scalingData</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>func</Type>
+      <Scope>TPChartDataScaling-p</Scope>
+    </TokenIdentifier>
+    <Path>protocol_t_p_chart_data_scaling-p.html</Path>
+    <Anchor>07baf58661290fbb5218acf690c7f444</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -419,6 +449,16 @@
     </TokenIdentifier>
     <Path>protocol_t_p_chart_solid_fill-p.html</Path>
     <Anchor>6e76d20ece19c4a545c530ae19cf39c7</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>fillColors</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>func</Type>
+      <Scope>TPChartSolidFill-p</Scope>
+    </TokenIdentifier>
+    <Path>protocol_t_p_chart_solid_fill-p.html</Path>
+    <Anchor>4691f3015a03c6b4d975e33e7999bdd3</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -652,6 +692,16 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>colors</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>TPParameterChartColor</Scope>
+    </TokenIdentifier>
+    <Path>interface_t_p_parameter_chart_color.html</Path>
+    <Anchor>0bbf36caacfc5c1e0aa8014ae75d8756</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>TPParameterDataScaling</Name>
       <APILanguage>occ</APILanguage>
       <Type>cl</Type>
@@ -669,6 +719,26 @@
     </TokenIdentifier>
     <Path>interface_t_p_parameter_data_scaling.html</Path>
     <Anchor>3dfe9bc7aed1db751668d2b35ed5f96a</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>minValueForDataSet:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>TPParameterDataScaling</Scope>
+    </TokenIdentifier>
+    <Path>interface_t_p_parameter_data_scaling.html</Path>
+    <Anchor>5a9973137a688517df307f31c3a0897f</Anchor>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>maxValueForDataSet:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>TPParameterDataScaling</Scope>
+    </TokenIdentifier>
+    <Path>interface_t_p_parameter_data_scaling.html</Path>
+    <Anchor>ba2b88c8204e29d01147545b935e5af1</Anchor>
   </Token>
   <Token>
     <TokenIdentifier>

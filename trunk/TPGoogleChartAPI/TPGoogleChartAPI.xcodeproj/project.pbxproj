@@ -29,6 +29,7 @@
 		F237C5440F38D561008D5427 /* TPParameterAxisStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F237C5430F38D561008D5427 /* TPParameterAxisStyle.m */; };
 		F237C5450F38D561008D5427 /* TPParameterAxisStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = F237C5420F38D561008D5427 /* TPParameterAxisStyle.h */; };
 		F237C5460F38D561008D5427 /* TPParameterAxisStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F237C5430F38D561008D5427 /* TPParameterAxisStyle.m */; };
+		F23FD9250F41B505003B9826 /* TPTestChartOMeter.plist in Resources */ = {isa = PBXBuildFile; fileRef = F23FD9240F41B505003B9826 /* TPTestChartOMeter.plist */; };
 		F289510B0F3A19C600166F2B /* TPChartVenn.m in Sources */ = {isa = PBXBuildFile; fileRef = F289510A0F3A19C600166F2B /* TPChartVenn.m */; };
 		F289510C0F3A19C600166F2B /* TPChartVenn.h in Headers */ = {isa = PBXBuildFile; fileRef = F28951090F3A19C600166F2B /* TPChartVenn.h */; };
 		F289510D0F3A19C600166F2B /* TPChartVenn.m in Sources */ = {isa = PBXBuildFile; fileRef = F289510A0F3A19C600166F2B /* TPChartVenn.m */; };
@@ -83,6 +84,20 @@
 		F2E97E1D0F3A166D002B6BF8 /* TPChartBasic.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E97E1C0F3A166D002B6BF8 /* TPChartBasic.m */; };
 		F2E97E1E0F3A166D002B6BF8 /* TPChartBasic.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E97E1B0F3A166D002B6BF8 /* TPChartBasic.h */; };
 		F2E97E1F0F3A166D002B6BF8 /* TPChartBasic.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E97E1C0F3A166D002B6BF8 /* TPChartBasic.m */; };
+		F2EDCEE20F419ED2008B1EFB /* TPChartLineSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EDCEE10F419ED2008B1EFB /* TPChartLineSerialization.m */; };
+		F2EDCEE30F419ED2008B1EFB /* TPChartLineSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = F2EDCEE00F419ED2008B1EFB /* TPChartLineSerialization.h */; };
+		F2EDCEE40F419ED2008B1EFB /* TPChartLineSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EDCEE10F419ED2008B1EFB /* TPChartLineSerialization.m */; };
+		F2EDCEF20F41A079008B1EFB /* TPParameterAxisStyleSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EDCEF10F41A079008B1EFB /* TPParameterAxisStyleSerialization.m */; };
+		F2EDCEF30F41A079008B1EFB /* TPParameterAxisStyleSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = F2EDCEF00F41A079008B1EFB /* TPParameterAxisStyleSerialization.h */; };
+		F2EDCEF40F41A079008B1EFB /* TPParameterAxisStyleSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EDCEF10F41A079008B1EFB /* TPParameterAxisStyleSerialization.m */; };
+		F2EDCF140F41A508008B1EFB /* TPTestChartLine.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2EDCF130F41A508008B1EFB /* TPTestChartLine.plist */; };
+		F2EDCF1A0F41A70C008B1EFB /* TPChartVennSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EDCF190F41A70C008B1EFB /* TPChartVennSerialization.m */; };
+		F2EDCF1B0F41A70C008B1EFB /* TPChartVennSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = F2EDCF180F41A70C008B1EFB /* TPChartVennSerialization.h */; };
+		F2EDCF1C0F41A70C008B1EFB /* TPChartVennSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EDCF190F41A70C008B1EFB /* TPChartVennSerialization.m */; };
+		F2EDCF280F41AED9008B1EFB /* TPTestChartVenn.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2EDCF270F41AED9008B1EFB /* TPTestChartVenn.plist */; };
+		F2EDCF3E0F41B13F008B1EFB /* TPChartOMeterSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EDCF3D0F41B13F008B1EFB /* TPChartOMeterSerialization.m */; };
+		F2EDCF3F0F41B13F008B1EFB /* TPChartOMeterSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = F2EDCF3C0F41B13F008B1EFB /* TPChartOMeterSerialization.h */; };
+		F2EDCF400F41B13F008B1EFB /* TPChartOMeterSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EDCF3D0F41B13F008B1EFB /* TPChartOMeterSerialization.m */; };
 		F2FFF6D20F3F576C00F41566 /* TPTestChartColor.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2FFF6D10F3F576C00F41566 /* TPTestChartColor.plist */; };
 		F2FFF7300F3F5EDD00F41566 /* TPTestScaling.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2FFF72F0F3F5EDD00F41566 /* TPTestScaling.plist */; };
 /* End PBXBuildFile section */
@@ -117,6 +132,7 @@
 		F211C9900F3B079000DBBC3F /* TPChartOMeterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChartOMeterTest.m; sourceTree = "<group>"; };
 		F237C5420F38D561008D5427 /* TPParameterAxisStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPParameterAxisStyle.h; sourceTree = "<group>"; };
 		F237C5430F38D561008D5427 /* TPParameterAxisStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPParameterAxisStyle.m; sourceTree = "<group>"; };
+		F23FD9240F41B505003B9826 /* TPTestChartOMeter.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TPTestChartOMeter.plist; sourceTree = "<group>"; };
 		F28951090F3A19C600166F2B /* TPChartVenn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChartVenn.h; sourceTree = "<group>"; };
 		F289510A0F3A19C600166F2B /* TPChartVenn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChartVenn.m; sourceTree = "<group>"; };
 		F28A1FDC0F4093CF0087C17C /* TPTestChart.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TPTestChart.plist; sourceTree = "<group>"; };
@@ -160,6 +176,16 @@
 		F2E97D5E0F3A0C74002B6BF8 /* TPChartBarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChartBarTest.m; sourceTree = "<group>"; };
 		F2E97E1B0F3A166D002B6BF8 /* TPChartBasic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChartBasic.h; sourceTree = "<group>"; };
 		F2E97E1C0F3A166D002B6BF8 /* TPChartBasic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChartBasic.m; sourceTree = "<group>"; };
+		F2EDCEE00F419ED2008B1EFB /* TPChartLineSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChartLineSerialization.h; sourceTree = "<group>"; };
+		F2EDCEE10F419ED2008B1EFB /* TPChartLineSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChartLineSerialization.m; sourceTree = "<group>"; };
+		F2EDCEF00F41A079008B1EFB /* TPParameterAxisStyleSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPParameterAxisStyleSerialization.h; sourceTree = "<group>"; };
+		F2EDCEF10F41A079008B1EFB /* TPParameterAxisStyleSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPParameterAxisStyleSerialization.m; sourceTree = "<group>"; };
+		F2EDCF130F41A508008B1EFB /* TPTestChartLine.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TPTestChartLine.plist; sourceTree = "<group>"; };
+		F2EDCF180F41A70C008B1EFB /* TPChartVennSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChartVennSerialization.h; sourceTree = "<group>"; };
+		F2EDCF190F41A70C008B1EFB /* TPChartVennSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChartVennSerialization.m; sourceTree = "<group>"; };
+		F2EDCF270F41AED9008B1EFB /* TPTestChartVenn.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TPTestChartVenn.plist; sourceTree = "<group>"; };
+		F2EDCF3C0F41B13F008B1EFB /* TPChartOMeterSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPChartOMeterSerialization.h; sourceTree = "<group>"; };
+		F2EDCF3D0F41B13F008B1EFB /* TPChartOMeterSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPChartOMeterSerialization.m; sourceTree = "<group>"; };
 		F2FFF6D10F3F576C00F41566 /* TPTestChartColor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TPTestChartColor.plist; sourceTree = "<group>"; };
 		F2FFF72F0F3F5EDD00F41566 /* TPTestScaling.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TPTestScaling.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -342,16 +368,24 @@
 				F2C56AF00F3C80F400E6B02D /* TPChartBasicSerialization.m */,
 				F2C56B4B0F3C841900E6B02D /* TPChartSerialization.h */,
 				F2C56B4C0F3C841900E6B02D /* TPChartSerialization.m */,
-				F2C56B5C0F3C873700E6B02D /* TPParameterChartColorSerialization.h */,
-				F2C56B5D0F3C873700E6B02D /* TPParameterChartColorSerialization.m */,
-				F2C56B700F3C891200E6B02D /* TPColorSerialization.h */,
-				F2C56B710F3C891200E6B02D /* TPColorSerialization.m */,
+				F28A21430F409FC40087C17C /* TPChartPieSerialization.h */,
+				F28A21440F409FC40087C17C /* TPChartPieSerialization.m */,
+				F2EDCEE00F419ED2008B1EFB /* TPChartLineSerialization.h */,
+				F2EDCEE10F419ED2008B1EFB /* TPChartLineSerialization.m */,
+				F2EDCF180F41A70C008B1EFB /* TPChartVennSerialization.h */,
+				F2EDCF190F41A70C008B1EFB /* TPChartVennSerialization.m */,
+				F2EDCF3C0F41B13F008B1EFB /* TPChartOMeterSerialization.h */,
+				F2EDCF3D0F41B13F008B1EFB /* TPChartOMeterSerialization.m */,
 				F2C56B8F0F3C8CC000E6B02D /* TPParameterSolidFillSerialization.h */,
 				F2C56B900F3C8CC000E6B02D /* TPParameterSolidFillSerialization.m */,
 				F2C56B9D0F3C8F5500E6B02D /* TPParameterDataScalingSerialization.h */,
 				F2C56B9E0F3C8F5500E6B02D /* TPParameterDataScalingSerialization.m */,
-				F28A21430F409FC40087C17C /* TPChartPieSerialization.h */,
-				F28A21440F409FC40087C17C /* TPChartPieSerialization.m */,
+				F2C56B5C0F3C873700E6B02D /* TPParameterChartColorSerialization.h */,
+				F2C56B5D0F3C873700E6B02D /* TPParameterChartColorSerialization.m */,
+				F2EDCEF00F41A079008B1EFB /* TPParameterAxisStyleSerialization.h */,
+				F2EDCEF10F41A079008B1EFB /* TPParameterAxisStyleSerialization.m */,
+				F2C56B700F3C891200E6B02D /* TPColorSerialization.h */,
+				F2C56B710F3C891200E6B02D /* TPColorSerialization.m */,
 			);
 			name = serialization;
 			sourceTree = "<group>";
@@ -368,6 +402,9 @@
 		F2FFF6920F3F573E00F41566 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				F23FD9240F41B505003B9826 /* TPTestChartOMeter.plist */,
+				F2EDCF270F41AED9008B1EFB /* TPTestChartVenn.plist */,
+				F2EDCF130F41A508008B1EFB /* TPTestChartLine.plist */,
 				F28A218B0F40A3290087C17C /* TPTestChartPie.plist */,
 				F28A20C50F409C6A0087C17C /* TPTestChartBasic.plist */,
 				F28A1FFE0F4094830087C17C /* TPTestSolidFill.plist */,
@@ -406,6 +443,10 @@
 				F2C56B920F3C8CC000E6B02D /* TPParameterSolidFillSerialization.h in Headers */,
 				F2C56BA00F3C8F5500E6B02D /* TPParameterDataScalingSerialization.h in Headers */,
 				F28A21460F409FC40087C17C /* TPChartPieSerialization.h in Headers */,
+				F2EDCEE30F419ED2008B1EFB /* TPChartLineSerialization.h in Headers */,
+				F2EDCEF30F41A079008B1EFB /* TPParameterAxisStyleSerialization.h in Headers */,
+				F2EDCF1B0F41A70C008B1EFB /* TPChartVennSerialization.h in Headers */,
+				F2EDCF3F0F41B13F008B1EFB /* TPChartOMeterSerialization.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +529,9 @@
 				F28A1FFF0F4094830087C17C /* TPTestSolidFill.plist in Resources */,
 				F28A20C60F409C6A0087C17C /* TPTestChartBasic.plist in Resources */,
 				F28A218C0F40A3290087C17C /* TPTestChartPie.plist in Resources */,
+				F2EDCF140F41A508008B1EFB /* TPTestChartLine.plist in Resources */,
+				F2EDCF280F41AED9008B1EFB /* TPTestChartVenn.plist in Resources */,
+				F23FD9250F41B505003B9826 /* TPTestChartOMeter.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +590,10 @@
 				F2C56B930F3C8CC000E6B02D /* TPParameterSolidFillSerialization.m in Sources */,
 				F2C56BA10F3C8F5500E6B02D /* TPParameterDataScalingSerialization.m in Sources */,
 				F28A21470F409FC40087C17C /* TPChartPieSerialization.m in Sources */,
+				F2EDCEE40F419ED2008B1EFB /* TPChartLineSerialization.m in Sources */,
+				F2EDCEF40F41A079008B1EFB /* TPParameterAxisStyleSerialization.m in Sources */,
+				F2EDCF1C0F41A70C008B1EFB /* TPChartVennSerialization.m in Sources */,
+				F2EDCF400F41B13F008B1EFB /* TPChartOMeterSerialization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +629,10 @@
 				F2C56B910F3C8CC000E6B02D /* TPParameterSolidFillSerialization.m in Sources */,
 				F2C56B9F0F3C8F5500E6B02D /* TPParameterDataScalingSerialization.m in Sources */,
 				F28A21450F409FC40087C17C /* TPChartPieSerialization.m in Sources */,
+				F2EDCEE20F419ED2008B1EFB /* TPChartLineSerialization.m in Sources */,
+				F2EDCEF20F41A079008B1EFB /* TPParameterAxisStyleSerialization.m in Sources */,
+				F2EDCF1A0F41A70C008B1EFB /* TPChartVennSerialization.m in Sources */,
+				F2EDCF3E0F41B13F008B1EFB /* TPChartOMeterSerialization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,6 +720,8 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;

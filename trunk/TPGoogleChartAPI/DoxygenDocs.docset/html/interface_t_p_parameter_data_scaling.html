@@ -40,9 +40,65 @@ Inheritance diagram for TPParameterDataScaling:</div>
 <tr><td colspan="2"><br><h2>Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_p_parameter_data_scaling.html#3dfe9bc7aed1db751668d2b35ed5f96a">setValueForDataSet:minValue:maxValue:</a></td></tr>
 
+<tr><td class="memItemLeft" nowrap align="right" valign="top">(NSNumber *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_p_parameter_data_scaling.html#5a9973137a688517df307f31c3a0897f">minValueForDataSet:</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">(NSNumber *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_p_parameter_data_scaling.html#ba2b88c8204e29d01147545b935e5af1">maxValueForDataSet:</a></td></tr>
+
 </table>
 <hr><a name="_details"></a><h2>Detailed Description</h2>
 This class is responsible for data scaling <hr><h2>Member Function Documentation</h2>
+<a class="anchor" name="ba2b88c8204e29d01147545b935e5af1"></a><!-- doxytag: member="TPParameterDataScaling::maxValueForDataSet:" ref="ba2b88c8204e29d01147545b935e5af1" args="(NSInteger index)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSNumber *) maxValueForDataSet:           </td>
+          <td></td>
+          <td class="paramtype">(NSInteger)&nbsp;</td>
+          <td class="paramname"> <em>index</em>          </td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Returns the max value for a given index <dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>index</em>&nbsp;</td><td>index of the max value to return </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Returns:</b></dt><dd>max value </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5a9973137a688517df307f31c3a0897f"></a><!-- doxytag: member="TPParameterDataScaling::minValueForDataSet:" ref="5a9973137a688517df307f31c3a0897f" args="(NSInteger index)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSNumber *) minValueForDataSet:           </td>
+          <td></td>
+          <td class="paramtype">(NSInteger)&nbsp;</td>
+          <td class="paramname"> <em>index</em>          </td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Returns the min value for a given index <dl compact><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>index</em>&nbsp;</td><td>index of the min value to return </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Returns:</b></dt><dd>min value </dd></dl>
+
+</div>
+</div><p>
 <a class="anchor" name="3dfe9bc7aed1db751668d2b35ed5f96a"></a><!-- doxytag: member="TPParameterDataScaling::setValueForDataSet:minValue:maxValue:" ref="3dfe9bc7aed1db751668d2b35ed5f96a" args="(NSInteger index,[minValue] NSNumber *min,[maxValue] NSNumber *max)" -->
 <div class="memitem">
 <div class="memproto">
@@ -89,7 +145,7 @@ Set a new scaling value for a specified index <dl compact><dt><b>Parameters:</b>
 <hr>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_t_p_parameter_data_scaling_8h-source.html">TPParameterDataScaling.h</a><li>TPParameterDataScaling.m</ul>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Mon Feb 9 18:54:23 2009 by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Tue Feb 10 17:31:02 2009 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.7.1 </small></address>
 </body>
