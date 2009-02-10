@@ -40,6 +40,12 @@
  */
 - (void)setAxisStyle:(TPParameterAxisStyle *)style;
 
+/**
+ * returns the axis style of the receving chart
+ * @return axis style
+ */
+- (TPParameterAxisStyle *)axisStyle;
+
 @end
 
 
@@ -54,6 +60,13 @@
  * @param colors colors to set
  */
 -(void)setChartColors:(TPParameterChartColor *)colors;
+
+/**
+ * Get the chart colors
+ * @return chart colors
+ */
+-(TPParameterChartColor *)chartColors;
+
 @end
 
 
@@ -69,6 +82,12 @@
  */
 -(void)setFillColors:(TPParameterSolidFill *)fillColors;
 
+/**
+ * Get the chart fill color
+ * @return chart fill color
+ */
+-(TPParameterSolidFill *)fillColors;
+
 @end
 
 @class TPParameterDataScaling;
@@ -81,5 +100,11 @@
  * @param scalingData scaling data
  */
 -(void)setScalingData:(TPParameterDataScaling *)scalingData;
+
+/**
+ * Get the scaling data
+ * @return scaling data
+ */
+-(TPParameterDataScaling *)scalingData;
 
 @end

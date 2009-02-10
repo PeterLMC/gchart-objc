@@ -66,4 +66,15 @@
         [scalingData addObject:newValues];
     }
 }
+
+-(NSNumber *)minValueForDataSet:(NSInteger)index
+{
+    return [[scalingData objectAtIndex:index] objectAtIndex:0];
+}
+
+
+-(NSNumber *)maxValueForDataSet:(NSInteger)index
+{
+    return [[scalingData objectAtIndex:index] objectAtIndex:1];
+}
 @end

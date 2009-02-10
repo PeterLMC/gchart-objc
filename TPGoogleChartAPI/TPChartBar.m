@@ -38,6 +38,11 @@
     axis = axisStyle;
 }
 
+-(TPParameterAxisStyle *)axisStyle
+{
+    return axis;
+}
+
 #pragma mark Protocol TPAddsPartToTheURL
 -(NSMutableString *)partialURL
 {

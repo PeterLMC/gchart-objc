@@ -38,6 +38,7 @@
     self = [super init];
     if (self != nil) {
         type = TPChartTypePieP3;
+        angle = 0;
     }
     return self;
 }
@@ -65,7 +66,7 @@
     [url appendString:typeString];
     
     if(angle != 0){
-        [url appendString:[NSString stringWithFormat:@"&chp=%i",angle]];
+        [url appendString:[NSString stringWithFormat:@"&chp=%f",angle]];
     }
     return url;
 }

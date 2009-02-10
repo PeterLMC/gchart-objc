@@ -46,4 +46,18 @@
 - (void)setValueForDataSet:(NSInteger)index 
                   minValue:(NSNumber *)min 
                   maxValue:(NSNumber *)max;
+
+/**
+ * Returns the min value for a given index
+ * @param index index of the min value to return
+ * @return min value
+ */
+-(NSNumber *)minValueForDataSet:(NSInteger)index;
+
+/**
+ * Returns the max value for a given index
+ * @param index index of the max value to return
+ * @return max value
+ */
+-(NSNumber *)maxValueForDataSet:(NSInteger)index;
 @end
