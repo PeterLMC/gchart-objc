@@ -42,6 +42,7 @@
     TPParameterChartColor *colors;
     TPParameterDataScaling *scaling;
 }
+
 /**
  * Size of the chart
  */

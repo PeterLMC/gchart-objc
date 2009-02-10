@@ -47,7 +47,7 @@
     
     chart.type = TPChartTypePieP3;
     chart.angle = 0.5; //wrong implemented!!!
-    NSString *url = [NSString stringWithFormat:@"%@chs=%.0fx%.0f&chco=00ff00,ff0000&chd=t:40.000000,60.000000&cht=p3&chp=0",kGoogleChartAPIURL,chart.size.width,chart.size.height];
+    NSString *url = [NSString stringWithFormat:@"%@chs=%.0fx%.0f&chco=00ff00,ff0000&chd=t:40.000000,60.000000&cht=p3&chp=0.500000",kGoogleChartAPIURL,chart.size.width,chart.size.height];
     STAssertEqualObjects([chart partialURL],url,nil);
 }
 

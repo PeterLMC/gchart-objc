@@ -43,4 +43,10 @@
  */
 -(void)setColors:(NSArray *)colors;
 
+/**
+ * Returns the array with the colors
+ * @return an array with TPColor objects
+ */
+-(NSArray *)colors;
+
 @end

@@ -37,6 +37,12 @@
     colors = chartColors;
 }
 
+-(NSArray *)colors
+{
+    return colors;
+}
+
+
 #pragma mark Protocol TPAddsPartToTheURL
 -(NSMutableString *)partialURL
 {

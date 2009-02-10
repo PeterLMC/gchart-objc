@@ -69,4 +69,9 @@
 -(void)setAxisStyle:(TPParameterAxisStyle *)axisStyle {
     axis = axisStyle;
 }
+
+- (TPParameterAxisStyle *)axisStyle
+{
+    return axis;
+}
 @end

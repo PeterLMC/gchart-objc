@@ -72,6 +72,11 @@
     colors = chartColors;
 }
 
+- (TPParameterChartColor *)chartColors
+{
+    return colors;
+}
+
 #pragma mark Protocol TPChartSolidFill
 
 -(void)setFillColors:(TPParameterSolidFill *)newFillColor
@@ -79,9 +84,19 @@
     fillColors = newFillColor;
 }
 
+- (TPParameterSolidFill *)fillColors
+{
+    return fillColors;
+}
+
 #pragma mark Protocol TPChartDataScaling
 -(void)setScalingData:(TPParameterDataScaling *)scalingDta
 {
     scaling = scalingDta;
+}
+
+-(TPParameterDataScaling *)scalingData
+{
+    return scaling;
 }
 @end
