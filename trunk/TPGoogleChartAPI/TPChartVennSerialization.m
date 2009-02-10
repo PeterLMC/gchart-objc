@@ -1,5 +1,5 @@
 //
-//  TPChartPieSerialization.m
+//  TPChartVennSerialization.m
 //  TPGoogleChartAPI
 //
 //  Copyright (c) 2009 Thomas Post. All rights reserved.
@@ -26,35 +26,43 @@
 //  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-#import "TPChartPieSerialization.h"
-#import "TPChartBasicSerialization.h"
+#import "TPChartVennSerialization.h"
+#import "TPChartSerialization.h"
 
-@implementation TPChartPie (Serialization)
-
-- (NSMutableDictionary *)serializableDictionary
+@implementation TPChartVenn (Serialization)
++ (id)createChart:(NSDictionary *)data
 {
-    NSMutableDictionary *data = [super serializableDictionary];
-    if(angle != 0){
-        [data setObject:[NSNumber numberWithFloat:angle] forKey:@"TPChartPieAngle"];
-    }
-    [data setObject:[NSNumber numberWithInt:type] forKey:@"TPChartPieType"];
-    return data;
-}
-+ (id)createChart:(NSDictionary *)data;
-{
-    TPChartPie *newPieChart = [[TPChartPie alloc] initWithPlist:data];
-    return newPieChart;
+    TPChartVenn *venn = [[TPChartVenn alloc] initWithPlist:data];
+    return venn;
 }
 - (id)initWithPlist:(NSDictionary *)data
 {
     self = [super initWithPlist:data];
     if (self != nil) {
-        angle = [[data objectForKey:@"TPChartPieAngle"] floatValue];
-        type = [[data objectForKey:@"TPChartPieType"] intValue];
+        A = [[[data objectForKey:@"TPChartVennValues"] objectAtIndex:0] doubleValue];
+        B = [[[data objectForKey:@"TPChartVennValues"] objectAtIndex:1] doubleValue];
+        C = [[[data objectForKey:@"TPChartVennValues"] objectAtIndex:2] doubleValue];
+        AB = [[[data objectForKey:@"TPChartVennValues"] objectAtIndex:3] doubleValue];
+        AC = [[[data objectForKey:@"TPChartVennValues"] objectAtIndex:4] doubleValue];
+        BC = [[[data objectForKey:@"TPChartVennValues"] objectAtIndex:5] doubleValue];
+        ABC = [[[data objectForKey:@"TPChartVennValues"] objectAtIndex:6] doubleValue];
     }
     return self;
-
 }
 
 
+- (NSMutableDictionary *)serializableDictionary
+{
+    NSMutableDictionary *dic = [super serializableDictionary];
+    NSArray *values = [NSArray arrayWithObjects:[NSNumber numberWithDouble:A],
+                       [NSNumber numberWithDouble:B],
+                       [NSNumber numberWithDouble:C],
+                       [NSNumber numberWithDouble:AB],
+                       [NSNumber numberWithDouble:AC],
+                       [NSNumber numberWithDouble:BC],
+                       [NSNumber numberWithDouble:ABC],nil];
+    [dic setObject:values forKey:@"TPChartVennValues"];
+    return dic;
+
+}
 @end

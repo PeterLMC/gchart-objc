@@ -69,14 +69,6 @@
 @protocol TPChartSerializationPropertyListDictionary
 
 /**
- * Creates a new Chart with the given data
- * @param data Dictionary with the thata to create the object
- * @return a new initialized Chart
- */
-@optional
-+ (id)createChart:(NSDictionary *)data;
-
-/**
  * To initialize a chart with data from a dictionary
  * @param data data to initialize the object
  */
@@ -88,5 +80,12 @@
  */
 - (NSMutableDictionary *)serializableDictionary;
 
+/**
+ * Creates a new Chart with the given data
+ * @param data Dictionary with the thata to create the object
+ * @return a new initialized Chart
+ */
+@optional
++ (id)createChart:(NSDictionary *)data;
 @end
 

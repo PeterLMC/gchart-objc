@@ -1,5 +1,5 @@
 //
-//  TPChartSerializationTest.h
+//  TPParameterAxisStyleSerialization.h
 //  TPGoogleChartAPI
 //
 //  Copyright (c) 2009 Thomas Post. All rights reserved.
@@ -26,20 +26,12 @@
 //  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <Foundation/Foundation.h>
+#import "TPParameterAxisStyle.h"
+#import "TPChartSerializationProtocols.h"
 
-
-@interface TPSerializationTest : SenTestCase {
-
-}
-
--(void)testTPChartSerialization;
--(void)testChartColorSerialization;
--(void)testChartSolidFillSerialization;
--(void)testPrameterScalingSerialization;
--(void)testTPColorSerialization;
--(void)testTPChartBasicSerialization;
--(void)testTPChartPieSerialization;
--(void)testTPChartLineSerialization;
--(void)testTPChartVennSerialization;
+/**
+ * Serialization category for TPParameterAxisStyle
+ */
+@interface TPParameterAxisStyle (Serializable)<TPChartSerializationPropertyList>
 @end

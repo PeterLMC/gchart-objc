@@ -1,5 +1,5 @@
 //
-//  TPChartSerializationTest.h
+//  TPChartOMeterSerialization.m
 //  TPGoogleChartAPI
 //
 //  Copyright (c) 2009 Thomas Post. All rights reserved.
@@ -26,20 +26,34 @@
 //  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import "TPChartOMeterSerialization.h"
+#import "TPChartSerialization.h"
 
-
-@interface TPSerializationTest : SenTestCase {
-
+@implementation TPChartOMeter (Serialization)
++ (id)createChart:(NSDictionary *)data
+{
+    TPChartOMeter *venn = [[TPChartOMeter alloc] initWithPlist:data];
+    return venn;
+}
+- (id)initWithPlist:(NSDictionary *)data
+{
+    self = [super initWithPlist:data];
+    if (self != nil) {
+        value = [[data objectForKey:@"TPChartOMeterValue"] intValue];
+        label = [data objectForKey:@"TPChartOMeterLabel"];
+    }
+    return self;
 }
 
--(void)testTPChartSerialization;
--(void)testChartColorSerialization;
--(void)testChartSolidFillSerialization;
--(void)testPrameterScalingSerialization;
--(void)testTPColorSerialization;
--(void)testTPChartBasicSerialization;
--(void)testTPChartPieSerialization;
--(void)testTPChartLineSerialization;
--(void)testTPChartVennSerialization;
+
+- (NSMutableDictionary *)serializableDictionary
+{
+    NSMutableDictionary *dic = [super serializableDictionary];
+    if(label){
+        [dic setObject:label forKey:@"TPChartOMeterLabel"];
+    }
+    [dic setObject:[NSNumber numberWithInt:value] forKey:@"TPChartOMeterValue"];
+    return dic;
+    
+}
 @end
