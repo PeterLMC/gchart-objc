@@ -1,0 +1,66 @@
+\hypertarget{protocol_t_p_chart_serialization_property_list_dictionary-p}{
+\section{$<$ TPChartSerializationPropertyListDictionary $>$ Protocol Reference}
+\label{protocol_t_p_chart_serialization_property_list_dictionary-p}\index{TPChartSerializationPropertyListDictionary-p@{TPChartSerializationPropertyListDictionary-p}}
+}
+{\tt \#import $<$TPChartSerializationProtocols.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+(id) - \hyperlink{protocol_t_p_chart_serialization_property_list_dictionary-p_e4bb4f36e40839798379b7457f347efd}{initWithPlist:}
+\item 
+(NSMutableDictionary $\ast$) - \hyperlink{protocol_t_p_chart_serialization_property_list_dictionary-p_fe0efcbee8a5b37a2c14568c6c111348}{serializableDictionary}
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+(id) + \hyperlink{protocol_t_p_chart_serialization_property_list_dictionary-p_be3a5d2f8864a8d2cae2f98322ae9c62}{createChart:}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Protocol for charts who are serialized to a NSDictionary\par
+ Normaly that every Chart calls its super class to get a NSMutableDictionary.\par
+ Afterwards it adds it's values to the dictionary and returns it. 
+
+\subsection{Member Function Documentation}
+\hypertarget{protocol_t_p_chart_serialization_property_list_dictionary-p_be3a5d2f8864a8d2cae2f98322ae9c62}{
+\index{TPChartSerializationPropertyListDictionary-p@{TPChartSerializationPropertyListDictionary-p}!createChart:@{createChart:}}
+\index{createChart:@{createChart:}!TPChartSerializationPropertyListDictionary-p@{TPChartSerializationPropertyListDictionary-p}}
+\subsubsection[{createChart:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) createChart: (NSDictionary $\ast$) {\em data}\hspace{0.3cm}{\tt  \mbox{[}static, optional\mbox{]}}}}
+\label{protocol_t_p_chart_serialization_property_list_dictionary-p_be3a5d2f8864a8d2cae2f98322ae9c62}
+
+
+Creates a new Chart with the given data \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em data}]Dictionary with the thata to create the object \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]a new initialized Chart \end{Desc}
+\hypertarget{protocol_t_p_chart_serialization_property_list_dictionary-p_e4bb4f36e40839798379b7457f347efd}{
+\index{TPChartSerializationPropertyListDictionary-p@{TPChartSerializationPropertyListDictionary-p}!initWithPlist:@{initWithPlist:}}
+\index{initWithPlist:@{initWithPlist:}!TPChartSerializationPropertyListDictionary-p@{TPChartSerializationPropertyListDictionary-p}}
+\subsubsection[{initWithPlist:}]{\setlength{\rightskip}{0pt plus 5cm}- (id) initWithPlist: (NSDictionary $\ast$) {\em data}}}
+\label{protocol_t_p_chart_serialization_property_list_dictionary-p_e4bb4f36e40839798379b7457f347efd}
+
+
+To initialize a chart with data from a dictionary \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em data}]data to initialize the object \end{description}
+\end{Desc}
+\hypertarget{protocol_t_p_chart_serialization_property_list_dictionary-p_fe0efcbee8a5b37a2c14568c6c111348}{
+\index{TPChartSerializationPropertyListDictionary-p@{TPChartSerializationPropertyListDictionary-p}!serializableDictionary@{serializableDictionary}}
+\index{serializableDictionary@{serializableDictionary}!TPChartSerializationPropertyListDictionary-p@{TPChartSerializationPropertyListDictionary-p}}
+\subsubsection[{serializableDictionary}]{\setlength{\rightskip}{0pt plus 5cm}- (NSMutableDictionary $\ast$) serializableDictionary }}
+\label{protocol_t_p_chart_serialization_property_list_dictionary-p_fe0efcbee8a5b37a2c14568c6c111348}
+
+
+Returns a NSMutableDictionary with the serilized data \begin{Desc}
+\item[Returns:]serialized object \end{Desc}
+
+
+The documentation for this protocol was generated from the following file:\begin{CompactItemize}
+\item 
+TPChartSerializationProtocols.h\end{CompactItemize}
