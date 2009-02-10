@@ -1,5 +1,5 @@
 //
-//  TPChartSerializationTest.h
+//  TPChartLineSerialization.m
 //  TPGoogleChartAPI
 //
 //  Copyright (c) 2009 Thomas Post. All rights reserved.
@@ -26,20 +26,33 @@
 //  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import "TPChartLineSerialization.h"
+#import "TPParameterAxisStyleSerialization.h"
+
+@implementation TPChartLine (Serialization)
 
 
-@interface TPSerializationTest : SenTestCase {
-
++ (id)createChart:(NSDictionary *)data
+{
+    return [[TPChartLine alloc] initWithPlist:data];
+}
+- (id)initWithPlist:(NSDictionary *)data
+{
+    self = [super initWithPlist:data];
+    if (self != nil) {
+        type = [[data objectForKey:@"TPChartLineType"] intValue];
+        axis = [TPParameterAxisStyle objectFromPropertyList:[data objectForKey:@"TPChartLineAxis"]];
+    }
+    return self;
 }
 
--(void)testTPChartSerialization;
--(void)testChartColorSerialization;
--(void)testChartSolidFillSerialization;
--(void)testPrameterScalingSerialization;
--(void)testTPColorSerialization;
--(void)testTPChartBasicSerialization;
--(void)testTPChartPieSerialization;
--(void)testTPChartLineSerialization;
--(void)testTPChartVennSerialization;
+
+- (NSMutableDictionary *)serializableDictionary
+{
+    NSMutableDictionary *dic = [super serializableDictionary];
+    [dic setObject:[NSNumber numberWithInt:type] forKey:@"TPChartLineType"];
+    [dic setObject:[axis propertyList] forKey:@"TPChartLineAxis"];
+    return dic;
+}
+
 @end

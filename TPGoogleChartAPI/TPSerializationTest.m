@@ -34,6 +34,10 @@
 #import "TPColorSerialization.h"
 #import "TPChartBasicSerialization.h"
 #import "TPChartPieSerialization.h"
+#import "TPChartLineSerialization.h"
+#import "TPParameterAxisStyleSerialization.h"
+#import "TPChartVennSerialization.h"
+#import "TPChartOMeterSerialization.h"
 
 @implementation TPSerializationTest
 
@@ -179,6 +183,72 @@
     
     //reinport and compaire again
     TPChartPie *chart2 = [TPChartPie createChart:plist];
+    STAssertEqualObjects(plist,[chart2 serializableDictionary],nil);
+}
+
+
+-(void)testTPChartLineSerialization
+{
+    TPChartLine *chart = [[TPChartLine alloc] init];
+    chart.type = TPChartTypeLineS;
+    TPParameterAxisStyle *axis = [[TPParameterAxisStyle alloc] init];
+    axis.bottomXAxis = YES;
+    axis.rightYAxis = YES;
+    axis.topXAxis = NO;
+    [chart setAxisStyle:axis];
+    
+    id plist = [chart serializableDictionary];
+    NSString *errorString;
+    NSData *serializedPlist = [NSPropertyListSerialization dataFromPropertyList:plist format:NSPropertyListXMLFormat_v1_0 errorDescription:&errorString];
+    STAssertNil(errorString,@"Error on plist serialization occured");
+    NSData *reference = [NSData dataWithContentsOfFile:@"TPTestChartLine.plist"];
+    STAssertNotNil(reference,nil);
+    STAssertEqualObjects(serializedPlist,reference,nil);
+    
+    //reinport and compaire again
+    TPChartLine *chart2 = [TPChartLine createChart:plist];
+    STAssertEqualObjects(plist,[chart2 serializableDictionary],nil);
+}
+
+-(void)testTPChartVennSerialization
+{
+    TPChartVenn *chart = [[TPChartVenn alloc] init];
+    chart.A = 10;
+    chart.B = 10;
+    chart.C = 10;
+    chart.AB = 2.5;
+    chart.AC = 1.5;
+    
+    id plist = [chart serializableDictionary];
+    NSString *errorString;
+    NSData *serializedPlist = [NSPropertyListSerialization dataFromPropertyList:plist format:NSPropertyListXMLFormat_v1_0 errorDescription:&errorString];
+    STAssertNil(errorString,@"Error on plist serialization occured");
+    NSData *reference = [NSData dataWithContentsOfFile:@"TPTestChartVenn.plist"];
+    STAssertNotNil(reference,nil);
+    STAssertEqualObjects(serializedPlist,reference,nil);
+    
+    //reinport and compaire again
+    TPChartVenn *chart2 = [TPChartVenn createChart:plist];
+    STAssertEqualObjects(plist,[chart2 serializableDictionary],nil);
+}
+
+
+-(void)testTPChartOMeterSerialization
+{
+    TPChartOMeter *chart = [[TPChartOMeter alloc] init];
+    chart.label = @"Hello World";
+    chart.value = 200;
+    
+    id plist = [chart serializableDictionary];
+    NSString *errorString;
+    NSData *serializedPlist = [NSPropertyListSerialization dataFromPropertyList:plist format:NSPropertyListXMLFormat_v1_0 errorDescription:&errorString];
+    STAssertNil(errorString,@"Error on plist serialization occured");
+    NSData *reference = [NSData dataWithContentsOfFile:@"TPTestChartOMeter.plist"];
+    STAssertNotNil(reference,nil);
+    STAssertEqualObjects(serializedPlist,reference,nil);
+    
+    //reinport and compaire again
+    TPChartOMeter *chart2 = [TPChartOMeter createChart:plist];
     STAssertEqualObjects(plist,[chart2 serializableDictionary],nil);
 }
 @end

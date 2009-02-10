@@ -1,5 +1,5 @@
 //
-//  TPChartSerializationTest.h
+//  TPParameterAxisStyleSerialization.m
 //  TPGoogleChartAPI
 //
 //  Copyright (c) 2009 Thomas Post. All rights reserved.
@@ -26,20 +26,28 @@
 //  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import "TPParameterAxisStyleSerialization.h"
 
 
-@interface TPSerializationTest : SenTestCase {
+@implementation TPParameterAxisStyle (Serializable)
 
++ (id)objectFromPropertyList:(id)plist
+{
+    TPParameterAxisStyle *axis = [[[TPParameterAxisStyle alloc] init] autorelease];
+    axis.bottomXAxis = [[plist objectAtIndex:0] boolValue];
+    axis.topXAxis = [[plist objectAtIndex:1] boolValue];
+    axis.leftYAxis = [[plist objectAtIndex:2] boolValue];
+    axis.rightYAxis = [[plist objectAtIndex:3] boolValue];
+    return axis;
 }
 
--(void)testTPChartSerialization;
--(void)testChartColorSerialization;
--(void)testChartSolidFillSerialization;
--(void)testPrameterScalingSerialization;
--(void)testTPColorSerialization;
--(void)testTPChartBasicSerialization;
--(void)testTPChartPieSerialization;
--(void)testTPChartLineSerialization;
--(void)testTPChartVennSerialization;
+- (id)propertyList
+{
+    NSArray *plist = [NSArray arrayWithObjects:
+                      [NSNumber numberWithBool:bottomXAxis],
+                      [NSNumber numberWithBool:topXAxis],
+                      [NSNumber numberWithBool:leftYAxis],
+                      [NSNumber numberWithBool:rightYAxis],nil];
+    return plist;
+}
 @end
