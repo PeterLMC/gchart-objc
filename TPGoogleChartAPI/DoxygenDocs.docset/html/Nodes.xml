@@ -50,8 +50,16 @@
           <Path>interface_t_p_chart_line.html</Path>
          </Node>
          <Node>
+          <Name>TPChartLine(Serialization)</Name>
+          <Path>interface_t_p_chart_line_07_serialization_08.html</Path>
+         </Node>
+         <Node>
           <Name>TPChartOMeter</Name>
           <Path>interface_t_p_chart_o_meter.html</Path>
+         </Node>
+         <Node>
+          <Name>TPChartOMeter(Serialization)</Name>
+          <Path>interface_t_p_chart_o_meter_07_serialization_08.html</Path>
          </Node>
          <Node>
           <Name>TPChartPie</Name>
@@ -78,6 +86,10 @@
           <Path>interface_t_p_chart_venn.html</Path>
          </Node>
          <Node>
+          <Name>TPChartVenn(Serialization)</Name>
+          <Path>interface_t_p_chart_venn_07_serialization_08.html</Path>
+         </Node>
+         <Node>
           <Name>TPColor</Name>
           <Path>interface_t_p_color.html</Path>
          </Node>
@@ -88,6 +100,10 @@
          <Node>
           <Name>TPParameterAxisStyle</Name>
           <Path>interface_t_p_parameter_axis_style.html</Path>
+         </Node>
+         <Node>
+          <Name>TPParameterAxisStyle(Serializable)</Name>
+          <Path>interface_t_p_parameter_axis_style_07_serializable_08.html</Path>
          </Node>
          <Node>
           <Name>TPParameterChartColor</Name>
@@ -224,6 +240,14 @@
           </Subnodes>
          </Node>
          <Node>
+          <Name>TPChartLine(Serialization)</Name>
+          <Path>interface_t_p_chart_line_07_serialization_08.html</Path>
+         </Node>
+         <Node>
+          <Name>TPChartOMeter(Serialization)</Name>
+          <Path>interface_t_p_chart_o_meter_07_serialization_08.html</Path>
+         </Node>
+         <Node>
           <Name>TPChartPie(Serialization)</Name>
           <Path>interface_t_p_chart_pie_07_serialization_08.html</Path>
          </Node>
@@ -246,12 +270,20 @@
           </Subnodes>
          </Node>
          <Node>
+          <Name>TPChartVenn(Serialization)</Name>
+          <Path>interface_t_p_chart_venn_07_serialization_08.html</Path>
+         </Node>
+         <Node>
           <Name>TPColor</Name>
           <Path>interface_t_p_color.html</Path>
          </Node>
          <Node>
           <Name>TPColor(Serialization)</Name>
           <Path>interface_t_p_color_07_serialization_08.html</Path>
+         </Node>
+         <Node>
+          <Name>TPParameterAxisStyle(Serializable)</Name>
+          <Path>interface_t_p_parameter_axis_style_07_serializable_08.html</Path>
          </Node>
          <Node>
           <Name>TPParameterChartColor(Serialization)</Name>

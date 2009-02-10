@@ -54,35 +54,36 @@
 <a name="l00038"></a><a class="code" href="interface_t_p_chart.html">00038</a> <span class="keyword">@interface </span><a class="code" href="interface_t_p_chart.html">TPChart</a> : NSObject&lt;<a class="code" href="protocol_t_p_chart_solid_fill-p.html">TPChartSolidFill</a>,<a class="code" href="protocol_t_p_chart_color-p.html">TPChartColor</a>,<a class="code" href="protocol_t_p_chart_data_scaling-p.html">TPChartDataScaling</a>&gt; {
 <a name="l00039"></a>00039 <span class="keyword">@private</span>
 <a name="l00040"></a><a class="code" href="interface_t_p_chart.html#050f86ea651d6dee6d96cec69ff3a617">00040</a>     NSSize <a class="code" href="interface_t_p_chart.html#050f86ea651d6dee6d96cec69ff3a617">size</a>;
-<a name="l00041"></a>00041     <a class="code" href="interface_t_p_parameter_solid_fill.html">TPParameterSolidFill</a> *fillColors;
+<a name="l00041"></a>00041     <a class="code" href="interface_t_p_parameter_solid_fill.html">TPParameterSolidFill</a> *<a class="code" href="protocol_t_p_chart_solid_fill-p.html#4691f3015a03c6b4d975e33e7999bdd3">fillColors</a>;
 <a name="l00042"></a>00042     <a class="code" href="interface_t_p_parameter_chart_color.html">TPParameterChartColor</a> *colors;
 <a name="l00043"></a>00043     <a class="code" href="interface_t_p_parameter_data_scaling.html">TPParameterDataScaling</a> *scaling;
 <a name="l00044"></a>00044 }
-<a name="l00048"></a>00048 @<span class="keyword">property</span> NSSize size;
-<a name="l00049"></a>00049 
-<a name="l00054"></a>00054 - (NSMutableString *)URL;
-<a name="l00055"></a>00055 
-<a name="l00060"></a>00060 - (NSURLRequest *)imageRequest;
-<a name="l00061"></a>00061 
-<a name="l00062"></a>00062 <span class="keyword">@end</span>
-<a name="l00063"></a>00063 
+<a name="l00045"></a>00045 
+<a name="l00049"></a>00049 @<span class="keyword">property</span> NSSize size;
+<a name="l00050"></a>00050 
+<a name="l00055"></a>00055 - (NSMutableString *)URL;
+<a name="l00056"></a>00056 
+<a name="l00061"></a>00061 - (NSURLRequest *)imageRequest;
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063 <span class="keyword">@end</span>
 <a name="l00064"></a>00064 
 <a name="l00065"></a>00065 
 <a name="l00066"></a>00066 
 <a name="l00067"></a>00067 
-<a name="l00068"></a>00068 <span class="comment">/*</span>
-<a name="l00069"></a>00069 <span class="comment"> * Protocols for spezial Parameters</span>
-<a name="l00070"></a>00070 <span class="comment"> *</span>
-<a name="l00071"></a>00071 <span class="comment"> */</span>
-<a name="l00072"></a>00072 
+<a name="l00068"></a>00068 
+<a name="l00069"></a>00069 <span class="comment">/*</span>
+<a name="l00070"></a>00070 <span class="comment"> * Protocols for spezial Parameters</span>
+<a name="l00071"></a>00071 <span class="comment"> *</span>
+<a name="l00072"></a>00072 <span class="comment"> */</span>
 <a name="l00073"></a>00073 
-<a name="l00078"></a><a class="code" href="protocol_t_p_adds_part_to_the_u_r_l-p.html">00078</a>  <span class="keyword">@protocol </span>TPAddsPartToTheURL
-<a name="l00082"></a>00082 -(NSMutableString *)partialURL;
-<a name="l00083"></a>00083 
-<a name="l00084"></a>00084 <span class="keyword">@end</span>
-<a name="l00085"></a>00085 
+<a name="l00074"></a>00074 
+<a name="l00079"></a><a class="code" href="protocol_t_p_adds_part_to_the_u_r_l-p.html">00079</a>  <span class="keyword">@protocol </span>TPAddsPartToTheURL
+<a name="l00083"></a>00083 -(NSMutableString *)partialURL;
+<a name="l00084"></a>00084 
+<a name="l00085"></a>00085 <span class="keyword">@end</span>
+<a name="l00086"></a>00086 
 </pre></div></div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Mon Feb 9 18:54:23 2009 by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Tue Feb 10 17:31:02 2009 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.7.1 </small></address>
 </body>

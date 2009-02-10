@@ -53,31 +53,40 @@
 <a name="l00036"></a><a class="code" href="protocol_t_p_axis_style-p.html">00036</a> <span class="keyword">@protocol </span>TPAxisStyle
 <a name="l00041"></a>00041 - (void)setAxisStyle:(<a class="code" href="interface_t_p_parameter_axis_style.html">TPParameterAxisStyle</a> *)style;
 <a name="l00042"></a>00042 
-<a name="l00043"></a>00043 <span class="keyword">@end</span>
-<a name="l00044"></a>00044 
-<a name="l00045"></a>00045 
-<a name="l00046"></a>00046 <span class="keyword">@class</span> <a class="code" href="interface_t_p_parameter_chart_color.html">TPParameterChartColor</a>;
-<a name="l00047"></a>00047 
-<a name="l00051"></a><a class="code" href="protocol_t_p_chart_color-p.html">00051</a> <span class="keyword">@protocol </span>TPChartColor
-<a name="l00056"></a>00056 -(void)setChartColors:(<a class="code" href="interface_t_p_parameter_chart_color.html">TPParameterChartColor</a> *)colors;
-<a name="l00057"></a>00057 <span class="keyword">@end</span>
-<a name="l00058"></a>00058 
-<a name="l00059"></a>00059 
-<a name="l00060"></a>00060 <span class="keyword">@class</span> <a class="code" href="interface_t_p_parameter_solid_fill.html">TPParameterSolidFill</a>;
-<a name="l00061"></a>00061 
-<a name="l00065"></a><a class="code" href="protocol_t_p_chart_solid_fill-p.html">00065</a> <span class="keyword">@protocol </span>TPChartSolidFill
-<a name="l00070"></a>00070 -(void)setFillColors:(<a class="code" href="interface_t_p_parameter_solid_fill.html">TPParameterSolidFill</a> *)fillColors;
+<a name="l00047"></a>00047 - (<a class="code" href="interface_t_p_parameter_axis_style.html">TPParameterAxisStyle</a> *)axisStyle;
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049 <span class="keyword">@end</span>
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052 <span class="keyword">@class</span> <a class="code" href="interface_t_p_parameter_chart_color.html">TPParameterChartColor</a>;
+<a name="l00053"></a>00053 
+<a name="l00057"></a><a class="code" href="protocol_t_p_chart_color-p.html">00057</a> <span class="keyword">@protocol </span>TPChartColor
+<a name="l00062"></a>00062 -(void)setChartColors:(<a class="code" href="interface_t_p_parameter_chart_color.html">TPParameterChartColor</a> *)colors;
+<a name="l00063"></a>00063 
+<a name="l00068"></a>00068 -(<a class="code" href="interface_t_p_parameter_chart_color.html">TPParameterChartColor</a> *)chartColors;
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070 <span class="keyword">@end</span>
 <a name="l00071"></a>00071 
-<a name="l00072"></a>00072 <span class="keyword">@end</span>
-<a name="l00073"></a>00073 
-<a name="l00074"></a>00074 <span class="keyword">@class</span> <a class="code" href="interface_t_p_parameter_data_scaling.html">TPParameterDataScaling</a>;
-<a name="l00078"></a><a class="code" href="protocol_t_p_chart_data_scaling-p.html">00078</a> <span class="keyword">@protocol </span>TPChartDataScaling
-<a name="l00079"></a>00079 
-<a name="l00083"></a>00083 -(void)setScalingData:(<a class="code" href="interface_t_p_parameter_data_scaling.html">TPParameterDataScaling</a> *)scalingData;
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073 <span class="keyword">@class</span> <a class="code" href="interface_t_p_parameter_solid_fill.html">TPParameterSolidFill</a>;
+<a name="l00074"></a>00074 
+<a name="l00078"></a><a class="code" href="protocol_t_p_chart_solid_fill-p.html">00078</a> <span class="keyword">@protocol </span>TPChartSolidFill
+<a name="l00083"></a>00083 -(void)setFillColors:(<a class="code" href="interface_t_p_parameter_solid_fill.html">TPParameterSolidFill</a> *)fillColors;
 <a name="l00084"></a>00084 
-<a name="l00085"></a>00085 <span class="keyword">@end</span>
+<a name="l00089"></a>00089 -(<a class="code" href="interface_t_p_parameter_solid_fill.html">TPParameterSolidFill</a> *)fillColors;
+<a name="l00090"></a>00090 
+<a name="l00091"></a>00091 <span class="keyword">@end</span>
+<a name="l00092"></a>00092 
+<a name="l00093"></a>00093 <span class="keyword">@class</span> <a class="code" href="interface_t_p_parameter_data_scaling.html">TPParameterDataScaling</a>;
+<a name="l00097"></a><a class="code" href="protocol_t_p_chart_data_scaling-p.html">00097</a> <span class="keyword">@protocol </span>TPChartDataScaling
+<a name="l00098"></a>00098 
+<a name="l00102"></a>00102 -(void)setScalingData:(<a class="code" href="interface_t_p_parameter_data_scaling.html">TPParameterDataScaling</a> *)scalingData;
+<a name="l00103"></a>00103 
+<a name="l00108"></a>00108 -(<a class="code" href="interface_t_p_parameter_data_scaling.html">TPParameterDataScaling</a> *)scalingData;
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110 <span class="keyword">@end</span>
 </pre></div></div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Mon Feb 9 18:54:23 2009 by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Tue Feb 10 17:31:02 2009 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.7.1 </small></address>
 </body>
