@@ -1,0 +1,1 @@
+This is an API for generating Google charts with Objective-C.
